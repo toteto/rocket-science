@@ -7,17 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace VizuelnoProektGames
-{
-    public partial class MainForm : Form
-    {
-        public MainForm()
-        {
+namespace VizuelnoProektGames.XOception {
+    public partial class XOCeptionForm : Form {
+        public XOCeptionForm() {
             InitializeComponent();
-        }
-
-        private void button1_Click(object sender, EventArgs e) {
-
         }
     }
 }
