@@ -1,0 +1,9 @@
+E:\Visual Studio Workspace\rocket-science\VizuelnoProektGames\bin\Debug\VizuelnoProektGames.exe
+E:\Visual Studio Workspace\rocket-science\VizuelnoProektGames\bin\Debug\VizuelnoProektGames.pdb
+E:\Visual Studio Workspace\rocket-science\VizuelnoProektGames\obj\x86\Debug\VizuelnoProektGames.csprojResolveAssemblyReference.cache
+E:\Visual Studio Workspace\rocket-science\VizuelnoProektGames\obj\x86\Debug\VizuelnoProektGames.MainForm.resources
+E:\Visual Studio Workspace\rocket-science\VizuelnoProektGames\obj\x86\Debug\VizuelnoProektGames.Properties.Resources.resources
+E:\Visual Studio Workspace\rocket-science\VizuelnoProektGames\obj\x86\Debug\VizuelnoProektGames.XOception.XOCeptionForm.resources
+E:\Visual Studio Workspace\rocket-science\VizuelnoProektGames\obj\x86\Debug\VizuelnoProektGames.csproj.GenerateResource.Cache
+E:\Visual Studio Workspace\rocket-science\VizuelnoProektGames\obj\x86\Debug\VizuelnoProektGames.exe
+E:\Visual Studio Workspace\rocket-science\VizuelnoProektGames\obj\x86\Debug\VizuelnoProektGames.pdb

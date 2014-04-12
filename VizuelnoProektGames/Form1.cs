@@ -17,6 +17,9 @@ namespace VizuelnoProektGames
         }
 
         private void button1_Click(object sender, EventArgs e) {
+            XOception.XOCeptionForm XOForm = new XOception.XOCeptionForm();
+            XOForm.ShowDialog();
+
 
         }
     }
