@@ -19,6 +19,26 @@ namespace VizuelnoProektGames.Flags
             getListOfCountry();
         }
 
+        private List<String> shuffle(List<String> input)
+        {
+            List<String> output = new List<String>();
+            Random rnd = new Random();
+
+            int FIndex;
+            while (input.Count > 0)
+            {
+                FIndex = rnd.Next(0, input.Count);
+                output.Add(input[FIndex]);
+                input.RemoveAt(FIndex);
+            }
+
+            input.Clear();
+            input = null;
+            rnd = null;
+
+            return output;
+        }
+
         private void getListOfCountry()
         {
             DirectoryInfo MyRoot = new DirectoryInfo("../../Pictures");
