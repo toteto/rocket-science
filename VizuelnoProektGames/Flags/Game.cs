@@ -87,6 +87,15 @@ namespace VizuelnoProektGames.Flags
                     return temp;
             }
         }
+
+        public int isCorrect(int n)
+        {
+            if (n == indexOfTrueAnswer)
+                points++;
+
+            currentQuestion++;
+            return indexOfTrueAnswer;
+        }
        
         private List<String> shuffle(List<String> input)
         {
