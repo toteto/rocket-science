@@ -39,6 +39,17 @@ namespace VizuelnoProektGames.Flags
             numberOfQuestion = countryList.Count - 1;
 
         }
+
+        private String generateRandomCountry()
+        {
+            Random ran = new Random();
+            while (true)
+            {
+                String temp = countryList.ElementAt(ran.Next(0, numberOfQuestion));
+                if (temp != countryList.ElementAt(currentQuestion))
+                    return temp;
+            }
+        }
        
         private List<String> shuffle(List<String> input)
         {
