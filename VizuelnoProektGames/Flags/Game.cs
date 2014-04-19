@@ -9,6 +9,15 @@ namespace VizuelnoProektGames.Flags
     class Game
     {
         public List<String> countryList { get; set; }
+        public List<String> answerList { get; set; }
+
+        public Game()
+        {
+            countryList = new List<String>();
+            answerList = new List<String>();
+
+            getListOfCountry();
+        }
 
         private void getListOfCountry()
         {
