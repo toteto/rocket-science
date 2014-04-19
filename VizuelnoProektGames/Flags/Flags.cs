@@ -117,6 +117,12 @@ namespace VizuelnoProektGames.Flags
             checkQuestion(3);   
         }
 
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            getNextQuestion();
+            timer1.Stop();
+        }
+
        
     }
 }
