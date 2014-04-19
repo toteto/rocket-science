@@ -123,6 +123,16 @@ namespace VizuelnoProektGames.Flags
             timer1.Stop();
         }
 
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            progressBar1.Value += 1;
+            if (progressBar1.Value == 60)
+            {
+                timer2.Stop();
+                finishGameDialog();
+            }
+        }
+
        
     }
 }
