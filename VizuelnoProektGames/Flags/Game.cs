@@ -11,6 +11,15 @@ namespace VizuelnoProektGames.Flags
         public List<String> countryList { get; set; }
         public List<String> answerList { get; set; }
 
+        public int currentQuestion { get; set; }
+        public int numQuestion { get; set; }
+        public int numberOfQuestion { get; set; }
+
+        public int indexOfTrueAnswer { get; set; }
+
+        public int points { get; set; }
+
+
         public Game()
         {
             countryList = new List<String>();
@@ -19,6 +28,18 @@ namespace VizuelnoProektGames.Flags
             getListOfCountry();
         }
 
+        public void startNewGame()
+        {
+            answerList.Clear();
+            points = 0;
+            numQuestion = 0;
+            countryList = shuffle(countryList);
+
+            currentQuestion = 0;
+            numberOfQuestion = countryList.Count - 1;
+
+        }
+       
         private List<String> shuffle(List<String> input)
         {
             List<String> output = new List<String>();
