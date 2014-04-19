@@ -40,6 +40,43 @@ namespace VizuelnoProektGames.Flags
 
         }
 
+        public void generateNextQuestion()
+        {
+            answerList.Clear();
+
+            answerList.Add(countryList.ElementAt(currentQuestion));
+
+            for (int i = 0; i < 3; i++)
+            {
+                String country = generateRandomCountry();
+
+                if (answerList.Contains(country))
+                    i--;
+                else
+                    answerList.Add(country);
+
+            }
+
+            answerList = shuffle(answerList);
+
+            setTrueAnswer();
+
+            numQuestion++;
+        }
+
+        private void setTrueAnswer()
+        {
+            for (int i = 0; i < answerList.Count; i++)
+            {
+                if (answerList.ElementAt(i) == countryList.ElementAt(currentQuestion))
+                {
+                    indexOfTrueAnswer = i;
+                    break;
+                }
+            }
+
+        }
+
         private String generateRandomCountry()
         {
             Random ran = new Random();
