@@ -7,3 +7,13 @@ E:\Visual Studio Workspace\rocket-science\VizuelnoProektGames\obj\x86\Debug\Vizu
 E:\Visual Studio Workspace\rocket-science\VizuelnoProektGames\obj\x86\Debug\VizuelnoProektGames.csproj.GenerateResource.Cache
 E:\Visual Studio Workspace\rocket-science\VizuelnoProektGames\obj\x86\Debug\VizuelnoProektGames.exe
 E:\Visual Studio Workspace\rocket-science\VizuelnoProektGames\obj\x86\Debug\VizuelnoProektGames.pdb
+C:\Documents and Settings\Petar\My Documents\GitHub\rocket-science\VizuelnoProektGames\bin\Debug\VizuelnoProektGames.exe
+C:\Documents and Settings\Petar\My Documents\GitHub\rocket-science\VizuelnoProektGames\bin\Debug\VizuelnoProektGames.pdb
+C:\Documents and Settings\Petar\My Documents\GitHub\rocket-science\VizuelnoProektGames\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Petar\My Documents\GitHub\rocket-science\VizuelnoProektGames\obj\x86\Debug\VizuelnoProektGames.MainForm.resources
+C:\Documents and Settings\Petar\My Documents\GitHub\rocket-science\VizuelnoProektGames\obj\x86\Debug\VizuelnoProektGames.Properties.Resources.resources
+C:\Documents and Settings\Petar\My Documents\GitHub\rocket-science\VizuelnoProektGames\obj\x86\Debug\VizuelnoProektGames.XOception.XOCeptionForm.resources
+C:\Documents and Settings\Petar\My Documents\GitHub\rocket-science\VizuelnoProektGames\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\Petar\My Documents\GitHub\rocket-science\VizuelnoProektGames\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Documents and Settings\Petar\My Documents\GitHub\rocket-science\VizuelnoProektGames\obj\x86\Debug\VizuelnoProektGames.exe
+C:\Documents and Settings\Petar\My Documents\GitHub\rocket-science\VizuelnoProektGames\obj\x86\Debug\VizuelnoProektGames.pdb
