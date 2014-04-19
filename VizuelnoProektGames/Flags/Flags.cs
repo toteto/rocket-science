@@ -32,6 +32,52 @@ namespace VizuelnoProektGames.Flags
             timer2.Start();
         }
 
+        private void checkQuestion(int n)
+        {
+
+            int p = newGame.isCorrect(n);
+
+            if (p == n)
+                setImage(p, true);
+            else
+            {
+                setImage(n, false);
+                setImage(p, true);
+            }
+
+
+            timer1.Start();
+        }
+
+        private void setImage(int p, bool x)
+        {
+            Bitmap image = null;
+
+            if (x)
+                image = Properties.Resources._true;
+            else
+                image = Properties.Resources._false;
+
+            switch (p)
+            {
+                case 0:
+                    pictureBox5.Image = image;
+                    break;
+
+                case 1:
+                    pictureBox6.Image = image;
+                    break;
+
+                case 2:
+                    pictureBox7.Image = image;
+                    break;
+
+                case 3:
+                    pictureBox8.Image = image;
+                    break;
+            }
+        }
+
         private void getNextQuestion()
         {
             newGame.generateNextQuestion();
