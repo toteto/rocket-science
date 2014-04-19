@@ -96,5 +96,27 @@ namespace VizuelnoProektGames.Flags
             pictureBox7.Image = null;
             pictureBox8.Image = null;
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            checkQuestion(0);   
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            checkQuestion(1);   
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            checkQuestion(2);   
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            checkQuestion(3);   
+        }
+
+       
     }
 }
