@@ -133,6 +133,18 @@ namespace VizuelnoProektGames.Flags
             }
         }
 
+        private void finishGameDialog()
+        {
+
+            DialogResult result = MessageBox.Show("Answer " + newGame.points + " / " + newGame.numQuestion, "Question", MessageBoxButtons.YesNo);
+            if (result == DialogResult.Yes)
+                startGame();
+            else if (result == DialogResult.No)
+                this.Close();
+            else
+                this.Close();
+        }
+
        
     }
 }
