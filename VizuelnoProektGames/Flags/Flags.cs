@@ -11,9 +11,17 @@ namespace VizuelnoProektGames.Flags
 {
     public partial class Flags : Form
     {
+        public Game newGame;
+        
         public Flags()
         {
             InitializeComponent();
+        }
+
+        private void Flags_Load(object sender, EventArgs e)
+        {
+            newGame = new Game();
+            
         }
     }
 }

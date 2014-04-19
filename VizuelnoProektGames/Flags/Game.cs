@@ -6,7 +6,7 @@ using System.IO;
 
 namespace VizuelnoProektGames.Flags
 {
-    class Game
+    public class Game
     {
         public List<String> countryList { get; set; }
         public List<String> answerList { get; set; }
