@@ -17,3 +17,4 @@ C:\Documents and Settings\Petar\My Documents\GitHub\rocket-science\VizuelnoProek
 C:\Documents and Settings\Petar\My Documents\GitHub\rocket-science\VizuelnoProektGames\obj\x86\Debug\GenerateResource.write.1.tlog
 C:\Documents and Settings\Petar\My Documents\GitHub\rocket-science\VizuelnoProektGames\obj\x86\Debug\VizuelnoProektGames.exe
 C:\Documents and Settings\Petar\My Documents\GitHub\rocket-science\VizuelnoProektGames\obj\x86\Debug\VizuelnoProektGames.pdb
+C:\Documents and Settings\Petar\My Documents\GitHub\rocket-science\VizuelnoProektGames\obj\x86\Debug\VizuelnoProektGames.Flags.Flags.resources

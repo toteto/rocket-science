@@ -22,5 +22,11 @@ namespace VizuelnoProektGames
 
 
         }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            Flags.Flags FlagGame = new Flags.Flags();
+            FlagGame.ShowDialog();
+        }
     }
 }
