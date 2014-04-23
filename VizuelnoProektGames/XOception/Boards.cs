@@ -5,11 +5,11 @@ using System.Text;
 
 namespace VizuelnoProektGames.XOception {
    public  class MiniBoard {
-        public State boardSate { get; set; }
+        public State boardState { get; set; }
         public Seed[][] cells { get; set; }
 
         public MiniBoard() {
-            boardSate = State.PLAYING;
+            boardState = State.PLAYING;
             cells = new Seed[3][];
             for (int i = 0; i < 3; i++) {
                 cells[i] = new Seed[3];
@@ -23,36 +23,51 @@ namespace VizuelnoProektGames.XOception {
                 for (int j = 0; j < 3; j++)
                     if (cells[i][j] == Seed.EMPTY)
                         return false;
-            this.boardSate = State.DRAW;
+            this.boardState = State.DRAW;
             return true;
         }
 
-        public bool CheckSeedWin(Seed theSeed, int currentRow, int currentCol) {
+        public bool CheckWin(int currentRow, int currentCol) {
             // state check got from http://www3.ntu.edu.sg/home/ehchua/programming/java/JavaGame_TicTacToe.html#zz-2
-            return (cells[currentRow][0] == theSeed         // 3-in-the-row
-                   && cells[currentRow][1] == theSeed
-                   && cells[currentRow][2] == theSeed
-              || cells[0][currentCol] == theSeed      // 3-in-the-column
-                   && cells[1][currentCol] == theSeed
-                   && cells[2][currentCol] == theSeed
+            Seed currentPlayer = XOceptionGameMain.currentPlayer;
+            return (cells[currentRow][0] == currentPlayer         // 3-in-the-row
+                   && cells[currentRow][1] == currentPlayer
+                   && cells[currentRow][2] == currentPlayer
+              || cells[0][currentCol] == currentPlayer      // 3-in-the-column
+                   && cells[1][currentCol] == currentPlayer
+                   && cells[2][currentCol] == currentPlayer
               || currentRow == currentCol            // 3-in-the-diagonal
-                   && cells[0][0] == theSeed
-                   && cells[1][1] == theSeed
-                   && cells[2][2] == theSeed
+                   && cells[0][0] == currentPlayer
+                   && cells[1][1] == currentPlayer
+                   && cells[2][2] == currentPlayer
               || currentRow + currentCol == 2    // 3-in-the-opposite-diagonal
-                   && cells[0][2] == theSeed
-                   && cells[1][1] == theSeed
-                   && cells[2][0] == theSeed);
+                   && cells[0][2] == currentPlayer
+                   && cells[1][1] == currentPlayer
+                   && cells[2][0] == currentPlayer);
         }
 
+        public void playerMove(int row, int col) {
+            cells[row][col] = XOceptionGameMain.currentPlayer;
+            updateState(row, col);
+        }
+
+        private void updateState(int row, int col) {
+            if (CheckWin(row, col)) {
+                boardState = XOceptionGameMain.currentPlayer == Seed.X ? State.X_WON : State.O_WON;
+            } else if (CheckDraw()) {
+                boardState = State.DRAW;
+            }
+        }
     }
+
+
     public class MainBoard {
-        public State boardSate { get; set; }
+        public State boardState { get; set; }
 
         public MiniBoard[][] boards { get; set; }
 
         public MainBoard() {
-            boardSate = State.PLAYING;
+            boardState = State.PLAYING;
             boards = new MiniBoard[3][];
             for (int i = 0; i < 3; i++) {
                 boards[i] = new MiniBoard[3];
@@ -60,32 +75,46 @@ namespace VizuelnoProektGames.XOception {
                     boards[i][j] = new MiniBoard();
             }
         }
+
+        public void playerMove(int row, int col) {
+            System.Diagnostics.Debug.Write(row + ":" + col);
+            boards[row / 3][col / 3].playerMove(row % 3, col % 3);
+            updateState(row / 3, col / 3);
+        }
+        private void updateState(int row, int col) {
+            if (CheckWin(row, col)) {
+                boardState = XOceptionGameMain.currentPlayer == Seed.X ? State.X_WON : State.O_WON;
+            } else if (CheckDraw()) {
+                boardState = State.DRAW;
+            }
+        }
+
         public bool CheckDraw() {
             for (int i = 0; i < 3; i++)
                 for (int j = 0; j < 3; j++)
-                    if (boards[i][j].boardSate == State.PLAYING)
+                    if (boards[i][j].boardState == State.PLAYING)
                         return false;
-            this.boardSate = State.DRAW;
+            this.boardState = State.DRAW;
             return true;
         }
 
-        public bool CheckSeedWin(Seed seed, int currentRow, int currentCol) {
+        public bool CheckWin(int currentRow, int currentCol) {
             // state check got from http://www3.ntu.edu.sg/home/ehchua/programming/java/JavaGame_TicTacToe.html#zz-2
-            State theSeed = seed == Seed.X ? State.X_WON : State.O_WON;
-            return (boards[currentRow][0].boardSate == theSeed         // 3-in-the-row
-                   && boards[currentRow][1].boardSate == theSeed
-                   && boards[currentRow][2].boardSate == theSeed
-              || boards[0][currentCol].boardSate == theSeed      // 3-in-the-column
-                   && boards[1][currentCol].boardSate == theSeed
-                   && boards[2][currentCol].boardSate == theSeed
+            State currentPlayer = XOceptionGameMain.currentPlayer == Seed.X ? State.X_WON : State.O_WON;
+            return (boards[currentRow][0].boardState == currentPlayer         // 3-in-the-row
+                   && boards[currentRow][1].boardState == currentPlayer
+                   && boards[currentRow][2].boardState == currentPlayer
+              || boards[0][currentCol].boardState == currentPlayer      // 3-in-the-column
+                   && boards[1][currentCol].boardState == currentPlayer
+                   && boards[2][currentCol].boardState == currentPlayer
               || currentRow == currentCol            // 3-in-the-diagonal
-                   && boards[0][0].boardSate == theSeed
-                   && boards[1][1].boardSate == theSeed
-                   && boards[2][2].boardSate == theSeed
+                   && boards[0][0].boardState == currentPlayer
+                   && boards[1][1].boardState == currentPlayer
+                   && boards[2][2].boardState == currentPlayer
               || currentRow + currentCol == 2    // 3-in-the-opposite-diagonal
-                   && boards[0][2].boardSate == theSeed
-                   && boards[1][1].boardSate == theSeed
-                   && boards[2][0].boardSate == theSeed);
+                   && boards[0][2].boardState == currentPlayer
+                   && boards[1][1].boardState == currentPlayer
+                   && boards[2][0].boardState == currentPlayer);
         }
     }
 
