@@ -29,6 +29,7 @@ namespace VizuelnoProektGames.XOception {
                 btn.BackgroundImage = (System.Drawing.Image)Properties.Resources.dejan;
             }
             btn.Enabled = false;
+           // lblDebug.Text = "Button: " + System.Text.RegularExpressions.Regex.IsMatch(btn.Name, "^btn_\\d{2}");
             lblDebug.Text = "Game state: " + XOceptionGameMain.board.boardState.ToString();
         }
     }
