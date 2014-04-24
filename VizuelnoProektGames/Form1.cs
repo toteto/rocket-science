@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using VizuelnoProektGames.Memory;
 
 namespace VizuelnoProektGames
 {
@@ -27,6 +28,14 @@ namespace VizuelnoProektGames
         {
             Flags.Flags FlagGame = new Flags.Flags();
             FlagGame.ShowDialog();
+        }
+
+        private void button1_Click_2(object sender, EventArgs e)
+        {
+            this.Hide();
+            MemoryMainForm memoryMainForm = new MemoryMainForm();
+            memoryMainForm.ShowDialog();
+            this.Close();
         }
     }
 }

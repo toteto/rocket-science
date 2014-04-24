@@ -19,3 +19,15 @@ C:\Documents and Settings\Petar\My Documents\GitHub\rocket-science\VizuelnoProek
 C:\Documents and Settings\Petar\My Documents\GitHub\rocket-science\VizuelnoProektGames\obj\x86\Debug\VizuelnoProektGames.pdb
 C:\Documents and Settings\Petar\My Documents\GitHub\rocket-science\VizuelnoProektGames\obj\x86\Debug\VizuelnoProektGames.Flags.Flags.resources
 E:\Visual Studio Workspace\rocket-science\VizuelnoProektGames\obj\x86\Debug\VizuelnoProektGames.Flags.Flags.resources
+C:\Users\Trajche\Documents\GitHub\rocket-science\VizuelnoProektGames\obj\x86\Debug\VizuelnoProektGames.exe
+C:\Users\Trajche\Documents\GitHub\rocket-science\VizuelnoProektGames\obj\x86\Debug\VizuelnoProektGames.pdb
+C:\Users\Trajche\Documents\GitHub\rocket-science\VizuelnoProektGames\obj\x86\Debug\VizuelnoProektGames.csprojResolveAssemblyReference.cache
+C:\Users\Trajche\Documents\GitHub\rocket-science\VizuelnoProektGames\obj\x86\Debug\VizuelnoProektGames.Flags.Flags.resources
+C:\Users\Trajche\Documents\GitHub\rocket-science\VizuelnoProektGames\obj\x86\Debug\VizuelnoProektGames.MainForm.resources
+C:\Users\Trajche\Documents\GitHub\rocket-science\VizuelnoProektGames\obj\x86\Debug\VizuelnoProektGames.Memory.MemoryGameForm.resources
+C:\Users\Trajche\Documents\GitHub\rocket-science\VizuelnoProektGames\obj\x86\Debug\VizuelnoProektGames.Memory.MemoryMainForm.resources
+C:\Users\Trajche\Documents\GitHub\rocket-science\VizuelnoProektGames\obj\x86\Debug\VizuelnoProektGames.Properties.Resources.resources
+C:\Users\Trajche\Documents\GitHub\rocket-science\VizuelnoProektGames\obj\x86\Debug\VizuelnoProektGames.XOception.XOCeptionForm.resources
+C:\Users\Trajche\Documents\GitHub\rocket-science\VizuelnoProektGames\obj\x86\Debug\VizuelnoProektGames.csproj.GenerateResource.Cache
+C:\Users\Trajche\Documents\GitHub\rocket-science\VizuelnoProektGames\bin\Debug\VizuelnoProektGames.exe
+C:\Users\Trajche\Documents\GitHub\rocket-science\VizuelnoProektGames\bin\Debug\VizuelnoProektGames.pdb
