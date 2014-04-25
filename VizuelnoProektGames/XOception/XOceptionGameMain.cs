@@ -10,6 +10,7 @@ namespace VizuelnoProektGames.XOception {
         static public State currentState { get; set; }
         static public Seed currentPlayer { get; set; }
         public XOCeptionForm form { get; set; }
+        static public bool DebugMode { get; set; }
 
         public XOceptionGameMain(XOCeptionForm form) {
             board = new MainBoard();
@@ -24,11 +25,10 @@ namespace VizuelnoProektGames.XOception {
             board.playerMove(row, col);
             DisableInactive(row, col);
             currentPlayer = currentPlayer == Seed.X ? Seed.O : Seed.X;
-            //XOCeptionForm.debu("Game status:" + board.boardState);
         }
 
         public void DisableInactive(int row, int col) {
-            int rowA, colA;
+            int rowA, colA; // cell that has been played
             if (board.boards[row%3][col%3].boardState == State.PLAYING) {
                 rowA = row%3;
                 colA = col%3;
@@ -38,11 +38,11 @@ namespace VizuelnoProektGames.XOception {
             }
             foreach (var control in form.Controls) {
                 var btn = control as Button;
-                if (btn != null && System.Text.RegularExpressions.Regex.IsMatch(btn.Name, "^btn_\\d{2}")) {
-                    int currRow = Int32.Parse(btn.Name.ToCharArray()[4].ToString())/3;
-                    int currCol = Int32.Parse(btn.Name.ToCharArray()[5].ToString())/3;
-                    if ((currRow == rowA && currCol == colA) || rowA==-1) {
-                        if (board.boards[currRow][currCol].boardState == State.PLAYING)
+                if (btn != null && System.Text.RegularExpressions.Regex.IsMatch(btn.Name, "^btn_\\d{2}")) { // ckeck if the button is game button
+                    int currRow = Int32.Parse(btn.Name.ToCharArray()[4].ToString())/3; // mini board to be activated
+                    int currCol = Int32.Parse(btn.Name.ToCharArray()[5].ToString())/3; // mini board to be activated
+                    if (((currRow == rowA && currCol == colA) || rowA==-1 || DebugMode) && board.boardState==State.PLAYING) {
+                        if (board.boards[currRow][currCol].boardState == State.PLAYING && btn.BackgroundImage==null)
                             btn.Enabled = true;
                         else
                             btn.Enabled = false;

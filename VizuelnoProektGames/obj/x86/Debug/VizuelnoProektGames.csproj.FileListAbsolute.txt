@@ -31,3 +31,5 @@ C:\Users\Trajche\Documents\GitHub\rocket-science\VizuelnoProektGames\obj\x86\Deb
 C:\Users\Trajche\Documents\GitHub\rocket-science\VizuelnoProektGames\obj\x86\Debug\VizuelnoProektGames.csproj.GenerateResource.Cache
 C:\Users\Trajche\Documents\GitHub\rocket-science\VizuelnoProektGames\bin\Debug\VizuelnoProektGames.exe
 C:\Users\Trajche\Documents\GitHub\rocket-science\VizuelnoProektGames\bin\Debug\VizuelnoProektGames.pdb
+E:\Visual Studio Workspace\rocket-science\VizuelnoProektGames\obj\x86\Debug\VizuelnoProektGames.Memory.MemoryGameForm.resources
+E:\Visual Studio Workspace\rocket-science\VizuelnoProektGames\obj\x86\Debug\VizuelnoProektGames.Memory.MemoryMainForm.resources

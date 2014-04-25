@@ -1,0 +1,17 @@
+Welcome to XOCeption!
+Here are some basic rules to get you started.
+---------------------------------
+Game mechanics: 
+  - The game contains one main X-O board, but each cell has been replaced by another standard (mini) X-O board. 
+  - The game starts with all mini boards available to be played. Next mini board to be played is decided by the cell that is played in the previous move.
+       Ex. If player X player in top-left cell, player O "has" to play in top-left mini board.
+  - If the mini board is already WON, then the player gets to choose from all available mini boards.
+How to win:
+  - To win the mini X-O board, you need 3 of the same in one row, column or diagonal. Standard stuff.
+  - To win the game, you need to win 3 mini boards in one row, column or diagonal. Twisted stuff.
+---------------------------------
+Some words about the game:
+I got this game idea the immediate second Tomche Delev said we could make X-O game as project for the course Visual Programing, but try to make it our self not just copy it from the internet.
+Additional game mechanics were improved by searching for similar game. Similar game concept can be found on http://mathwithbaddrawings.com/2013/06/16/ultimate-tic-tac-toe/
+---------------------------------
+Antonio Ivanovski

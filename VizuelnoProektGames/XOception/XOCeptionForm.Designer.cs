@@ -105,8 +105,8 @@
             this.btn_61 = new System.Windows.Forms.Button();
             this.btn_62 = new System.Windows.Forms.Button();
             this.btn_60 = new System.Windows.Forms.Button();
-            this.lblDebug = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.cbCheatMode = new System.Windows.Forms.CheckBox();
+            this.btnHelp = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnExit
@@ -1172,32 +1172,34 @@
             this.btn_60.UseVisualStyleBackColor = false;
             this.btn_60.Click += new System.EventHandler(this.button1_Click);
             // 
-            // lblDebug
+            // cbCheatMode
             // 
-            this.lblDebug.AutoSize = true;
-            this.lblDebug.Location = new System.Drawing.Point(12, 425);
-            this.lblDebug.Name = "lblDebug";
-            this.lblDebug.Size = new System.Drawing.Size(35, 13);
-            this.lblDebug.TabIndex = 83;
-            this.lblDebug.Text = "label2";
+            this.cbCheatMode.AutoSize = true;
+            this.cbCheatMode.Location = new System.Drawing.Point(11, 424);
+            this.cbCheatMode.Name = "cbCheatMode";
+            this.cbCheatMode.Size = new System.Drawing.Size(156, 17);
+            this.cbCheatMode.TabIndex = 84;
+            this.cbCheatMode.Text = "Disable mini board disabling";
+            this.cbCheatMode.UseVisualStyleBackColor = true;
+            this.cbCheatMode.CheckedChanged += new System.EventHandler(this.cbCheatMode_CheckedChanged);
             // 
-            // button1
+            // btnHelp
             // 
-            this.button1.Location = new System.Drawing.Point(167, 425);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 84;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnHelp.Location = new System.Drawing.Point(271, 420);
+            this.btnHelp.Name = "btnHelp";
+            this.btnHelp.Size = new System.Drawing.Size(75, 23);
+            this.btnHelp.TabIndex = 85;
+            this.btnHelp.Text = "Help/Rules";
+            this.btnHelp.UseVisualStyleBackColor = true;
+            this.btnHelp.Click += new System.EventHandler(this.btnHelp_Click);
             // 
             // XOCeptionForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(433, 451);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.lblDebug);
+            this.Controls.Add(this.btnHelp);
+            this.Controls.Add(this.cbCheatMode);
             this.Controls.Add(this.btn_87);
             this.Controls.Add(this.btn_88);
             this.Controls.Add(this.btn_86);
@@ -1371,7 +1373,7 @@
         private System.Windows.Forms.Button btn_61;
         private System.Windows.Forms.Button btn_62;
         private System.Windows.Forms.Button btn_60;
-        private System.Windows.Forms.Label lblDebug;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.CheckBox cbCheatMode;
+        private System.Windows.Forms.Button btnHelp;
     }
 }
