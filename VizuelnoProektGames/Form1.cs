@@ -37,5 +37,9 @@ namespace VizuelnoProektGames
             memoryMainForm.ShowDialog();
             this.Close();
         }
+
+        private void MainForm_Load(object sender, EventArgs e) {
+
+        }
     }
 }

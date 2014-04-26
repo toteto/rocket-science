@@ -46,17 +46,18 @@ namespace VizuelnoProektGames.XOception {
                    && cells[2][0] == currentPlayer);
         }
 
-        public void playerMove(int row, int col) {
+        public State playerMove(int row, int col) {
             cells[row][col] = XOceptionGameMain.currentPlayer;
-            updateState(row, col);
+            return updateState(row, col);
         }
 
-        private void updateState(int row, int col) {
+        private State updateState(int row, int col) {
             if (CheckWin(row, col)) {
                 boardState = XOceptionGameMain.currentPlayer == Seed.X ? State.X_WON : State.O_WON;
             } else if (CheckDraw()) {
                 boardState = State.DRAW;
             }
+            return boardState;
         }
     }
 
@@ -76,10 +77,14 @@ namespace VizuelnoProektGames.XOception {
             }
         }
 
-        public void playerMove(int row, int col) {
+        public State playerMove(int row, int col) {
             System.Diagnostics.Debug.Write(row + ":" + col);
-            boards[row / 3][col / 3].playerMove(row % 3, col % 3);
-            updateState(row / 3, col / 3);
+            State miniBoardState = boards[row / 3][col / 3].playerMove(row % 3, col % 3);
+            if (miniBoardState==State.DRAW) {
+                boards[row / 3][col / 3] = new MiniBoard();
+            } else
+                updateState(row / 3, col / 3);
+            return miniBoardState;
         }
         private void updateState(int row, int col) {
             if (CheckWin(row, col)) {

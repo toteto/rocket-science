@@ -11,18 +11,26 @@ namespace VizuelnoProektGames.XOception {
     public partial class XOCeptionForm : Form {
         public XOceptionGameMain game { get; set; }
         public XOCeptionForm() {
-            game = new XOceptionGameMain(this);
             InitializeComponent();
+
+            game = new XOceptionGameMain(this);
+            XOceptionGameMain.currentPlayer = Seed.X;
+            updateCurrentPlayer();
         }
 
         private void btnExit_Click(object sender, EventArgs e) {
             this.DialogResult = DialogResult.Abort;
         }
+        private void updateCurrentPlayer() {
+            if (cbCheatMode.Checked)
+                lblCurrPlayer.Text = "Current player: " + (XOceptionGameMain.currentPlayer == Seed.X ? "Dejan" : "Tomche");
+            else
+                lblCurrPlayer.Text = "Current player: " + (XOceptionGameMain.currentPlayer == Seed.X ? "X" : "O");
+        }
 
         private void button1_Click(object sender, EventArgs e) {
+            updateCurrentPlayer();
             Button btn = (Button)sender;
-            //lblDebug.Text = btn.Name;
-            game.playerMove(btn);
             if (cbCheatMode.Checked) {
                 if (XOceptionGameMain.currentPlayer == Seed.O)
                     btn.BackgroundImage = (System.Drawing.Image)Properties.Resources.tomche;
@@ -30,11 +38,12 @@ namespace VizuelnoProektGames.XOception {
                     btn.BackgroundImage = (System.Drawing.Image)Properties.Resources.dejan;
             } else {
                 if (XOceptionGameMain.currentPlayer == Seed.O)
-                    btn.BackgroundImage = (System.Drawing.Image)Properties.Resources.X;
-                else
                     btn.BackgroundImage = (System.Drawing.Image)Properties.Resources.O;
+                else
+                    btn.BackgroundImage = (System.Drawing.Image)Properties.Resources.X;
             }
             btn.Enabled = false;
+            game.playerMove(btn);
             // lblDebug.Text = "Button: " + System.Text.RegularExpressions.Regex.IsMatch(btn.Name, "^btn_\\d{2}");
 
             if (XOceptionGameMain.board.boardState == State.X_WON)
@@ -50,8 +59,34 @@ namespace VizuelnoProektGames.XOception {
         }
 
         private void cbCheatMode_CheckedChanged(object sender, EventArgs e) {
+            //updateCurrentPlayer();
+            //updateBtnDebug();
             XOceptionGameMain.DebugMode = cbCheatMode.Checked;
-            MessageBox.Show("DebugMode Acticated!\nTomche=X\nDejan=O");
+            MessageBox.Show("DebugMode Acticated!\nDejan=O\nTomche=X");
+        }
+
+        private void updateBtnDebug() {
+            foreach (var control in this.Controls) {
+                var btn = control as Button;
+                if (btn != null) {
+                    if (cbCheatMode.Checked && btn.BackgroundImage!=null) {
+                        if (btn.BackgroundImage == Properties.Resources.X){
+                            btn.BackgroundImage = Properties.Resources.tomche;
+                        }
+                        else if (btn.BackgroundImage == (System.Drawing.Image)Properties.Resources.O)
+                            btn.BackgroundImage = Properties.Resources.dejan;
+                    } else {
+                        if (btn.BackgroundImage == Properties.Resources.tomche)
+                            btn.BackgroundImage = Properties.Resources.X;
+                        else if (btn.BackgroundImage == Properties.Resources.dejan)
+                            btn.BackgroundImage = Properties.Resources.O;
+                    }
+                }
+            }
+        }
+
+        private void XOCeptionForm_Load(object sender, EventArgs e) {
+            
         }
     }
 }

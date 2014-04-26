@@ -107,11 +107,21 @@
             this.btn_60 = new System.Windows.Forms.Button();
             this.cbCheatMode = new System.Windows.Forms.CheckBox();
             this.btnHelp = new System.Windows.Forms.Button();
+            this.lblCurrPlayer = new System.Windows.Forms.Label();
+            this.lbl_00 = new System.Windows.Forms.Label();
+            this.lbl_01 = new System.Windows.Forms.Label();
+            this.lbl_02 = new System.Windows.Forms.Label();
+            this.lbl_12 = new System.Windows.Forms.Label();
+            this.lbl_11 = new System.Windows.Forms.Label();
+            this.lbl_10 = new System.Windows.Forms.Label();
+            this.lbl_22 = new System.Windows.Forms.Label();
+            this.lbl_21 = new System.Windows.Forms.Label();
+            this.lbl_20 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(352, 420);
+            this.btnExit.Location = new System.Drawing.Point(358, 462);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(75, 23);
             this.btnExit.TabIndex = 0;
@@ -125,7 +135,7 @@
             this.btn_00.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_00.CausesValidation = false;
             this.btn_00.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btn_00.Location = new System.Drawing.Point(11, 9);
+            this.btn_00.Location = new System.Drawing.Point(20, 36);
             this.btn_00.Name = "btn_00";
             this.btn_00.Size = new System.Drawing.Size(45, 45);
             this.btn_00.TabIndex = 1;
@@ -138,7 +148,7 @@
             this.btn_02.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_02.CausesValidation = false;
             this.btn_02.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btn_02.Location = new System.Drawing.Point(99, 9);
+            this.btn_02.Location = new System.Drawing.Point(108, 36);
             this.btn_02.Name = "btn_02";
             this.btn_02.Size = new System.Drawing.Size(45, 45);
             this.btn_02.TabIndex = 2;
@@ -151,7 +161,7 @@
             this.btn_01.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_01.CausesValidation = false;
             this.btn_01.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btn_01.Location = new System.Drawing.Point(55, 9);
+            this.btn_01.Location = new System.Drawing.Point(64, 36);
             this.btn_01.Name = "btn_01";
             this.btn_01.Size = new System.Drawing.Size(45, 45);
             this.btn_01.TabIndex = 3;
@@ -164,7 +174,7 @@
             this.btn_11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_11.CausesValidation = false;
             this.btn_11.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btn_11.Location = new System.Drawing.Point(55, 53);
+            this.btn_11.Location = new System.Drawing.Point(64, 80);
             this.btn_11.Name = "btn_11";
             this.btn_11.Size = new System.Drawing.Size(45, 45);
             this.btn_11.TabIndex = 6;
@@ -177,7 +187,7 @@
             this.btn_12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_12.CausesValidation = false;
             this.btn_12.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btn_12.Location = new System.Drawing.Point(99, 53);
+            this.btn_12.Location = new System.Drawing.Point(108, 80);
             this.btn_12.Name = "btn_12";
             this.btn_12.Size = new System.Drawing.Size(45, 45);
             this.btn_12.TabIndex = 5;
@@ -190,7 +200,7 @@
             this.btn_10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_10.CausesValidation = false;
             this.btn_10.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btn_10.Location = new System.Drawing.Point(11, 53);
+            this.btn_10.Location = new System.Drawing.Point(20, 80);
             this.btn_10.Name = "btn_10";
             this.btn_10.Size = new System.Drawing.Size(45, 45);
             this.btn_10.TabIndex = 4;
@@ -203,7 +213,7 @@
             this.btn_21.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_21.CausesValidation = false;
             this.btn_21.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btn_21.Location = new System.Drawing.Point(55, 96);
+            this.btn_21.Location = new System.Drawing.Point(64, 123);
             this.btn_21.Name = "btn_21";
             this.btn_21.Size = new System.Drawing.Size(45, 45);
             this.btn_21.TabIndex = 9;
@@ -216,7 +226,7 @@
             this.btn_22.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_22.CausesValidation = false;
             this.btn_22.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btn_22.Location = new System.Drawing.Point(99, 96);
+            this.btn_22.Location = new System.Drawing.Point(108, 123);
             this.btn_22.Name = "btn_22";
             this.btn_22.Size = new System.Drawing.Size(45, 45);
             this.btn_22.TabIndex = 8;
@@ -229,7 +239,7 @@
             this.btn_20.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_20.CausesValidation = false;
             this.btn_20.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btn_20.Location = new System.Drawing.Point(11, 96);
+            this.btn_20.Location = new System.Drawing.Point(20, 123);
             this.btn_20.Name = "btn_20";
             this.btn_20.Size = new System.Drawing.Size(45, 45);
             this.btn_20.TabIndex = 7;
@@ -242,7 +252,7 @@
             this.btn_24.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_24.CausesValidation = false;
             this.btn_24.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btn_24.Location = new System.Drawing.Point(197, 96);
+            this.btn_24.Location = new System.Drawing.Point(209, 123);
             this.btn_24.Name = "btn_24";
             this.btn_24.Size = new System.Drawing.Size(45, 45);
             this.btn_24.TabIndex = 18;
@@ -255,7 +265,7 @@
             this.btn_25.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_25.CausesValidation = false;
             this.btn_25.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btn_25.Location = new System.Drawing.Point(241, 96);
+            this.btn_25.Location = new System.Drawing.Point(253, 123);
             this.btn_25.Name = "btn_25";
             this.btn_25.Size = new System.Drawing.Size(45, 45);
             this.btn_25.TabIndex = 17;
@@ -268,7 +278,7 @@
             this.btn_23.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_23.CausesValidation = false;
             this.btn_23.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btn_23.Location = new System.Drawing.Point(153, 96);
+            this.btn_23.Location = new System.Drawing.Point(165, 123);
             this.btn_23.Name = "btn_23";
             this.btn_23.Size = new System.Drawing.Size(45, 45);
             this.btn_23.TabIndex = 16;
@@ -281,7 +291,7 @@
             this.btn_14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_14.CausesValidation = false;
             this.btn_14.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btn_14.Location = new System.Drawing.Point(197, 53);
+            this.btn_14.Location = new System.Drawing.Point(209, 80);
             this.btn_14.Name = "btn_14";
             this.btn_14.Size = new System.Drawing.Size(45, 45);
             this.btn_14.TabIndex = 15;
@@ -294,7 +304,7 @@
             this.btn_15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_15.CausesValidation = false;
             this.btn_15.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btn_15.Location = new System.Drawing.Point(241, 53);
+            this.btn_15.Location = new System.Drawing.Point(253, 80);
             this.btn_15.Name = "btn_15";
             this.btn_15.Size = new System.Drawing.Size(45, 45);
             this.btn_15.TabIndex = 14;
@@ -307,7 +317,7 @@
             this.btn_13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_13.CausesValidation = false;
             this.btn_13.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btn_13.Location = new System.Drawing.Point(153, 53);
+            this.btn_13.Location = new System.Drawing.Point(165, 80);
             this.btn_13.Name = "btn_13";
             this.btn_13.Size = new System.Drawing.Size(45, 45);
             this.btn_13.TabIndex = 13;
@@ -320,7 +330,7 @@
             this.btn_04.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_04.CausesValidation = false;
             this.btn_04.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btn_04.Location = new System.Drawing.Point(197, 9);
+            this.btn_04.Location = new System.Drawing.Point(209, 36);
             this.btn_04.Name = "btn_04";
             this.btn_04.Size = new System.Drawing.Size(45, 45);
             this.btn_04.TabIndex = 12;
@@ -333,7 +343,7 @@
             this.btn_05.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_05.CausesValidation = false;
             this.btn_05.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btn_05.Location = new System.Drawing.Point(241, 9);
+            this.btn_05.Location = new System.Drawing.Point(253, 36);
             this.btn_05.Name = "btn_05";
             this.btn_05.Size = new System.Drawing.Size(45, 45);
             this.btn_05.TabIndex = 11;
@@ -346,7 +356,7 @@
             this.btn_03.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_03.CausesValidation = false;
             this.btn_03.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btn_03.Location = new System.Drawing.Point(153, 9);
+            this.btn_03.Location = new System.Drawing.Point(165, 36);
             this.btn_03.Name = "btn_03";
             this.btn_03.Size = new System.Drawing.Size(45, 45);
             this.btn_03.TabIndex = 10;
@@ -359,7 +369,7 @@
             this.btn_27.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_27.CausesValidation = false;
             this.btn_27.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btn_27.Location = new System.Drawing.Point(338, 96);
+            this.btn_27.Location = new System.Drawing.Point(354, 123);
             this.btn_27.Name = "btn_27";
             this.btn_27.Size = new System.Drawing.Size(45, 45);
             this.btn_27.TabIndex = 27;
@@ -372,7 +382,7 @@
             this.btn_28.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_28.CausesValidation = false;
             this.btn_28.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btn_28.Location = new System.Drawing.Point(382, 96);
+            this.btn_28.Location = new System.Drawing.Point(398, 123);
             this.btn_28.Name = "btn_28";
             this.btn_28.Size = new System.Drawing.Size(45, 45);
             this.btn_28.TabIndex = 26;
@@ -385,7 +395,7 @@
             this.btn_26.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_26.CausesValidation = false;
             this.btn_26.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btn_26.Location = new System.Drawing.Point(294, 96);
+            this.btn_26.Location = new System.Drawing.Point(310, 123);
             this.btn_26.Name = "btn_26";
             this.btn_26.Size = new System.Drawing.Size(45, 45);
             this.btn_26.TabIndex = 25;
@@ -398,7 +408,7 @@
             this.btn_17.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_17.CausesValidation = false;
             this.btn_17.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btn_17.Location = new System.Drawing.Point(338, 53);
+            this.btn_17.Location = new System.Drawing.Point(354, 80);
             this.btn_17.Name = "btn_17";
             this.btn_17.Size = new System.Drawing.Size(45, 45);
             this.btn_17.TabIndex = 24;
@@ -411,7 +421,7 @@
             this.btn_18.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_18.CausesValidation = false;
             this.btn_18.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btn_18.Location = new System.Drawing.Point(382, 53);
+            this.btn_18.Location = new System.Drawing.Point(398, 80);
             this.btn_18.Name = "btn_18";
             this.btn_18.Size = new System.Drawing.Size(45, 45);
             this.btn_18.TabIndex = 23;
@@ -424,7 +434,7 @@
             this.btn_16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_16.CausesValidation = false;
             this.btn_16.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btn_16.Location = new System.Drawing.Point(294, 53);
+            this.btn_16.Location = new System.Drawing.Point(310, 80);
             this.btn_16.Name = "btn_16";
             this.btn_16.Size = new System.Drawing.Size(45, 45);
             this.btn_16.TabIndex = 22;
@@ -437,7 +447,7 @@
             this.btn_07.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_07.CausesValidation = false;
             this.btn_07.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btn_07.Location = new System.Drawing.Point(338, 9);
+            this.btn_07.Location = new System.Drawing.Point(354, 36);
             this.btn_07.Name = "btn_07";
             this.btn_07.Size = new System.Drawing.Size(45, 45);
             this.btn_07.TabIndex = 21;
@@ -450,7 +460,7 @@
             this.btn_08.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_08.CausesValidation = false;
             this.btn_08.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btn_08.Location = new System.Drawing.Point(382, 9);
+            this.btn_08.Location = new System.Drawing.Point(398, 36);
             this.btn_08.Name = "btn_08";
             this.btn_08.Size = new System.Drawing.Size(45, 45);
             this.btn_08.TabIndex = 20;
@@ -463,7 +473,7 @@
             this.btn_06.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_06.CausesValidation = false;
             this.btn_06.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btn_06.Location = new System.Drawing.Point(294, 9);
+            this.btn_06.Location = new System.Drawing.Point(310, 36);
             this.btn_06.Name = "btn_06";
             this.btn_06.Size = new System.Drawing.Size(45, 45);
             this.btn_06.TabIndex = 19;
@@ -476,7 +486,7 @@
             this.btn_57.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_57.CausesValidation = false;
             this.btn_57.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btn_57.Location = new System.Drawing.Point(338, 233);
+            this.btn_57.Location = new System.Drawing.Point(354, 264);
             this.btn_57.Name = "btn_57";
             this.btn_57.Size = new System.Drawing.Size(45, 45);
             this.btn_57.TabIndex = 54;
@@ -489,7 +499,7 @@
             this.btn_58.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_58.CausesValidation = false;
             this.btn_58.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btn_58.Location = new System.Drawing.Point(382, 233);
+            this.btn_58.Location = new System.Drawing.Point(398, 264);
             this.btn_58.Name = "btn_58";
             this.btn_58.Size = new System.Drawing.Size(45, 45);
             this.btn_58.TabIndex = 53;
@@ -502,7 +512,7 @@
             this.btn_56.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_56.CausesValidation = false;
             this.btn_56.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btn_56.Location = new System.Drawing.Point(294, 233);
+            this.btn_56.Location = new System.Drawing.Point(310, 264);
             this.btn_56.Name = "btn_56";
             this.btn_56.Size = new System.Drawing.Size(45, 45);
             this.btn_56.TabIndex = 52;
@@ -515,7 +525,7 @@
             this.btn_47.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_47.CausesValidation = false;
             this.btn_47.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btn_47.Location = new System.Drawing.Point(338, 190);
+            this.btn_47.Location = new System.Drawing.Point(354, 221);
             this.btn_47.Name = "btn_47";
             this.btn_47.Size = new System.Drawing.Size(45, 45);
             this.btn_47.TabIndex = 51;
@@ -528,7 +538,7 @@
             this.btn_48.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_48.CausesValidation = false;
             this.btn_48.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btn_48.Location = new System.Drawing.Point(382, 190);
+            this.btn_48.Location = new System.Drawing.Point(398, 221);
             this.btn_48.Name = "btn_48";
             this.btn_48.Size = new System.Drawing.Size(45, 45);
             this.btn_48.TabIndex = 50;
@@ -541,7 +551,7 @@
             this.btn_46.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_46.CausesValidation = false;
             this.btn_46.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btn_46.Location = new System.Drawing.Point(294, 190);
+            this.btn_46.Location = new System.Drawing.Point(310, 221);
             this.btn_46.Name = "btn_46";
             this.btn_46.Size = new System.Drawing.Size(45, 45);
             this.btn_46.TabIndex = 49;
@@ -554,7 +564,7 @@
             this.btn_37.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_37.CausesValidation = false;
             this.btn_37.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btn_37.Location = new System.Drawing.Point(338, 146);
+            this.btn_37.Location = new System.Drawing.Point(354, 177);
             this.btn_37.Name = "btn_37";
             this.btn_37.Size = new System.Drawing.Size(45, 45);
             this.btn_37.TabIndex = 48;
@@ -567,7 +577,7 @@
             this.btn_38.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_38.CausesValidation = false;
             this.btn_38.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btn_38.Location = new System.Drawing.Point(382, 146);
+            this.btn_38.Location = new System.Drawing.Point(398, 177);
             this.btn_38.Name = "btn_38";
             this.btn_38.Size = new System.Drawing.Size(45, 45);
             this.btn_38.TabIndex = 47;
@@ -580,7 +590,7 @@
             this.btn_36.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_36.CausesValidation = false;
             this.btn_36.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btn_36.Location = new System.Drawing.Point(294, 146);
+            this.btn_36.Location = new System.Drawing.Point(310, 177);
             this.btn_36.Name = "btn_36";
             this.btn_36.Size = new System.Drawing.Size(45, 45);
             this.btn_36.TabIndex = 46;
@@ -593,7 +603,7 @@
             this.btn_54.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_54.CausesValidation = false;
             this.btn_54.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btn_54.Location = new System.Drawing.Point(197, 233);
+            this.btn_54.Location = new System.Drawing.Point(209, 264);
             this.btn_54.Name = "btn_54";
             this.btn_54.Size = new System.Drawing.Size(45, 45);
             this.btn_54.TabIndex = 45;
@@ -606,7 +616,7 @@
             this.btn_55.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_55.CausesValidation = false;
             this.btn_55.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btn_55.Location = new System.Drawing.Point(241, 233);
+            this.btn_55.Location = new System.Drawing.Point(253, 264);
             this.btn_55.Name = "btn_55";
             this.btn_55.Size = new System.Drawing.Size(45, 45);
             this.btn_55.TabIndex = 44;
@@ -619,7 +629,7 @@
             this.btn_53.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_53.CausesValidation = false;
             this.btn_53.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btn_53.Location = new System.Drawing.Point(153, 233);
+            this.btn_53.Location = new System.Drawing.Point(165, 264);
             this.btn_53.Name = "btn_53";
             this.btn_53.Size = new System.Drawing.Size(45, 45);
             this.btn_53.TabIndex = 43;
@@ -632,7 +642,7 @@
             this.btn_44.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_44.CausesValidation = false;
             this.btn_44.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btn_44.Location = new System.Drawing.Point(197, 190);
+            this.btn_44.Location = new System.Drawing.Point(209, 221);
             this.btn_44.Name = "btn_44";
             this.btn_44.Size = new System.Drawing.Size(45, 45);
             this.btn_44.TabIndex = 42;
@@ -645,7 +655,7 @@
             this.btn_45.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_45.CausesValidation = false;
             this.btn_45.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btn_45.Location = new System.Drawing.Point(241, 190);
+            this.btn_45.Location = new System.Drawing.Point(253, 221);
             this.btn_45.Name = "btn_45";
             this.btn_45.Size = new System.Drawing.Size(45, 45);
             this.btn_45.TabIndex = 41;
@@ -658,7 +668,7 @@
             this.btn_43.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_43.CausesValidation = false;
             this.btn_43.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btn_43.Location = new System.Drawing.Point(153, 190);
+            this.btn_43.Location = new System.Drawing.Point(165, 221);
             this.btn_43.Name = "btn_43";
             this.btn_43.Size = new System.Drawing.Size(45, 45);
             this.btn_43.TabIndex = 40;
@@ -671,7 +681,7 @@
             this.btn_34.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_34.CausesValidation = false;
             this.btn_34.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btn_34.Location = new System.Drawing.Point(197, 146);
+            this.btn_34.Location = new System.Drawing.Point(209, 177);
             this.btn_34.Name = "btn_34";
             this.btn_34.Size = new System.Drawing.Size(45, 45);
             this.btn_34.TabIndex = 39;
@@ -684,7 +694,7 @@
             this.btn_35.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_35.CausesValidation = false;
             this.btn_35.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btn_35.Location = new System.Drawing.Point(241, 146);
+            this.btn_35.Location = new System.Drawing.Point(253, 177);
             this.btn_35.Name = "btn_35";
             this.btn_35.Size = new System.Drawing.Size(45, 45);
             this.btn_35.TabIndex = 38;
@@ -697,7 +707,7 @@
             this.btn_33.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_33.CausesValidation = false;
             this.btn_33.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btn_33.Location = new System.Drawing.Point(153, 146);
+            this.btn_33.Location = new System.Drawing.Point(165, 177);
             this.btn_33.Name = "btn_33";
             this.btn_33.Size = new System.Drawing.Size(45, 45);
             this.btn_33.TabIndex = 37;
@@ -710,7 +720,7 @@
             this.btn_51.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_51.CausesValidation = false;
             this.btn_51.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btn_51.Location = new System.Drawing.Point(55, 233);
+            this.btn_51.Location = new System.Drawing.Point(64, 264);
             this.btn_51.Name = "btn_51";
             this.btn_51.Size = new System.Drawing.Size(45, 45);
             this.btn_51.TabIndex = 36;
@@ -723,7 +733,7 @@
             this.btn_52.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_52.CausesValidation = false;
             this.btn_52.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btn_52.Location = new System.Drawing.Point(99, 233);
+            this.btn_52.Location = new System.Drawing.Point(108, 264);
             this.btn_52.Name = "btn_52";
             this.btn_52.Size = new System.Drawing.Size(45, 45);
             this.btn_52.TabIndex = 35;
@@ -736,7 +746,7 @@
             this.btn_50.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_50.CausesValidation = false;
             this.btn_50.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btn_50.Location = new System.Drawing.Point(11, 233);
+            this.btn_50.Location = new System.Drawing.Point(20, 264);
             this.btn_50.Name = "btn_50";
             this.btn_50.Size = new System.Drawing.Size(45, 45);
             this.btn_50.TabIndex = 34;
@@ -749,7 +759,7 @@
             this.btn_41.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_41.CausesValidation = false;
             this.btn_41.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btn_41.Location = new System.Drawing.Point(55, 190);
+            this.btn_41.Location = new System.Drawing.Point(64, 221);
             this.btn_41.Name = "btn_41";
             this.btn_41.Size = new System.Drawing.Size(45, 45);
             this.btn_41.TabIndex = 33;
@@ -762,7 +772,7 @@
             this.btn_42.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_42.CausesValidation = false;
             this.btn_42.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btn_42.Location = new System.Drawing.Point(99, 190);
+            this.btn_42.Location = new System.Drawing.Point(108, 221);
             this.btn_42.Name = "btn_42";
             this.btn_42.Size = new System.Drawing.Size(45, 45);
             this.btn_42.TabIndex = 32;
@@ -775,7 +785,7 @@
             this.btn_40.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_40.CausesValidation = false;
             this.btn_40.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btn_40.Location = new System.Drawing.Point(11, 190);
+            this.btn_40.Location = new System.Drawing.Point(20, 221);
             this.btn_40.Name = "btn_40";
             this.btn_40.Size = new System.Drawing.Size(45, 45);
             this.btn_40.TabIndex = 31;
@@ -788,7 +798,7 @@
             this.btn_31.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_31.CausesValidation = false;
             this.btn_31.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btn_31.Location = new System.Drawing.Point(55, 146);
+            this.btn_31.Location = new System.Drawing.Point(64, 177);
             this.btn_31.Name = "btn_31";
             this.btn_31.Size = new System.Drawing.Size(45, 45);
             this.btn_31.TabIndex = 30;
@@ -801,7 +811,7 @@
             this.btn_32.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_32.CausesValidation = false;
             this.btn_32.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btn_32.Location = new System.Drawing.Point(99, 146);
+            this.btn_32.Location = new System.Drawing.Point(108, 177);
             this.btn_32.Name = "btn_32";
             this.btn_32.Size = new System.Drawing.Size(45, 45);
             this.btn_32.TabIndex = 29;
@@ -814,7 +824,7 @@
             this.btn_30.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_30.CausesValidation = false;
             this.btn_30.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btn_30.Location = new System.Drawing.Point(11, 146);
+            this.btn_30.Location = new System.Drawing.Point(20, 177);
             this.btn_30.Name = "btn_30";
             this.btn_30.Size = new System.Drawing.Size(45, 45);
             this.btn_30.TabIndex = 28;
@@ -827,7 +837,7 @@
             this.btn_87.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_87.CausesValidation = false;
             this.btn_87.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btn_87.Location = new System.Drawing.Point(338, 369);
+            this.btn_87.Location = new System.Drawing.Point(354, 404);
             this.btn_87.Name = "btn_87";
             this.btn_87.Size = new System.Drawing.Size(45, 45);
             this.btn_87.TabIndex = 81;
@@ -840,7 +850,7 @@
             this.btn_88.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_88.CausesValidation = false;
             this.btn_88.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btn_88.Location = new System.Drawing.Point(382, 369);
+            this.btn_88.Location = new System.Drawing.Point(398, 404);
             this.btn_88.Name = "btn_88";
             this.btn_88.Size = new System.Drawing.Size(45, 45);
             this.btn_88.TabIndex = 80;
@@ -853,7 +863,7 @@
             this.btn_86.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_86.CausesValidation = false;
             this.btn_86.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btn_86.Location = new System.Drawing.Point(294, 369);
+            this.btn_86.Location = new System.Drawing.Point(310, 404);
             this.btn_86.Name = "btn_86";
             this.btn_86.Size = new System.Drawing.Size(45, 45);
             this.btn_86.TabIndex = 79;
@@ -866,7 +876,7 @@
             this.btn_77.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_77.CausesValidation = false;
             this.btn_77.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btn_77.Location = new System.Drawing.Point(338, 326);
+            this.btn_77.Location = new System.Drawing.Point(354, 361);
             this.btn_77.Name = "btn_77";
             this.btn_77.Size = new System.Drawing.Size(45, 45);
             this.btn_77.TabIndex = 78;
@@ -879,7 +889,7 @@
             this.btn_78.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_78.CausesValidation = false;
             this.btn_78.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btn_78.Location = new System.Drawing.Point(382, 326);
+            this.btn_78.Location = new System.Drawing.Point(398, 361);
             this.btn_78.Name = "btn_78";
             this.btn_78.Size = new System.Drawing.Size(45, 45);
             this.btn_78.TabIndex = 77;
@@ -892,7 +902,7 @@
             this.btn_76.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_76.CausesValidation = false;
             this.btn_76.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btn_76.Location = new System.Drawing.Point(294, 326);
+            this.btn_76.Location = new System.Drawing.Point(310, 361);
             this.btn_76.Name = "btn_76";
             this.btn_76.Size = new System.Drawing.Size(45, 45);
             this.btn_76.TabIndex = 76;
@@ -905,7 +915,7 @@
             this.btn_67.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_67.CausesValidation = false;
             this.btn_67.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btn_67.Location = new System.Drawing.Point(338, 282);
+            this.btn_67.Location = new System.Drawing.Point(354, 317);
             this.btn_67.Name = "btn_67";
             this.btn_67.Size = new System.Drawing.Size(45, 45);
             this.btn_67.TabIndex = 75;
@@ -918,7 +928,7 @@
             this.btn_68.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_68.CausesValidation = false;
             this.btn_68.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btn_68.Location = new System.Drawing.Point(382, 282);
+            this.btn_68.Location = new System.Drawing.Point(398, 317);
             this.btn_68.Name = "btn_68";
             this.btn_68.Size = new System.Drawing.Size(45, 45);
             this.btn_68.TabIndex = 74;
@@ -931,7 +941,7 @@
             this.btn_66.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_66.CausesValidation = false;
             this.btn_66.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btn_66.Location = new System.Drawing.Point(294, 282);
+            this.btn_66.Location = new System.Drawing.Point(310, 317);
             this.btn_66.Name = "btn_66";
             this.btn_66.Size = new System.Drawing.Size(45, 45);
             this.btn_66.TabIndex = 73;
@@ -944,7 +954,7 @@
             this.btn_84.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_84.CausesValidation = false;
             this.btn_84.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btn_84.Location = new System.Drawing.Point(197, 369);
+            this.btn_84.Location = new System.Drawing.Point(209, 404);
             this.btn_84.Name = "btn_84";
             this.btn_84.Size = new System.Drawing.Size(45, 45);
             this.btn_84.TabIndex = 72;
@@ -957,7 +967,7 @@
             this.btn_85.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_85.CausesValidation = false;
             this.btn_85.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btn_85.Location = new System.Drawing.Point(241, 369);
+            this.btn_85.Location = new System.Drawing.Point(253, 404);
             this.btn_85.Name = "btn_85";
             this.btn_85.Size = new System.Drawing.Size(45, 45);
             this.btn_85.TabIndex = 71;
@@ -970,7 +980,7 @@
             this.btn_83.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_83.CausesValidation = false;
             this.btn_83.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btn_83.Location = new System.Drawing.Point(153, 369);
+            this.btn_83.Location = new System.Drawing.Point(165, 404);
             this.btn_83.Name = "btn_83";
             this.btn_83.Size = new System.Drawing.Size(45, 45);
             this.btn_83.TabIndex = 70;
@@ -983,7 +993,7 @@
             this.btn_74.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_74.CausesValidation = false;
             this.btn_74.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btn_74.Location = new System.Drawing.Point(197, 326);
+            this.btn_74.Location = new System.Drawing.Point(209, 361);
             this.btn_74.Name = "btn_74";
             this.btn_74.Size = new System.Drawing.Size(45, 45);
             this.btn_74.TabIndex = 69;
@@ -996,7 +1006,7 @@
             this.btn_75.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_75.CausesValidation = false;
             this.btn_75.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btn_75.Location = new System.Drawing.Point(241, 326);
+            this.btn_75.Location = new System.Drawing.Point(253, 361);
             this.btn_75.Name = "btn_75";
             this.btn_75.Size = new System.Drawing.Size(45, 45);
             this.btn_75.TabIndex = 68;
@@ -1009,7 +1019,7 @@
             this.btn_73.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_73.CausesValidation = false;
             this.btn_73.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btn_73.Location = new System.Drawing.Point(153, 326);
+            this.btn_73.Location = new System.Drawing.Point(165, 361);
             this.btn_73.Name = "btn_73";
             this.btn_73.Size = new System.Drawing.Size(45, 45);
             this.btn_73.TabIndex = 67;
@@ -1022,7 +1032,7 @@
             this.btn_64.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_64.CausesValidation = false;
             this.btn_64.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btn_64.Location = new System.Drawing.Point(197, 282);
+            this.btn_64.Location = new System.Drawing.Point(209, 317);
             this.btn_64.Name = "btn_64";
             this.btn_64.Size = new System.Drawing.Size(45, 45);
             this.btn_64.TabIndex = 66;
@@ -1035,7 +1045,7 @@
             this.btn_65.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_65.CausesValidation = false;
             this.btn_65.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btn_65.Location = new System.Drawing.Point(241, 282);
+            this.btn_65.Location = new System.Drawing.Point(253, 317);
             this.btn_65.Name = "btn_65";
             this.btn_65.Size = new System.Drawing.Size(45, 45);
             this.btn_65.TabIndex = 65;
@@ -1048,7 +1058,7 @@
             this.btn_63.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_63.CausesValidation = false;
             this.btn_63.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btn_63.Location = new System.Drawing.Point(153, 282);
+            this.btn_63.Location = new System.Drawing.Point(165, 317);
             this.btn_63.Name = "btn_63";
             this.btn_63.Size = new System.Drawing.Size(45, 45);
             this.btn_63.TabIndex = 64;
@@ -1061,7 +1071,7 @@
             this.btn_81.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_81.CausesValidation = false;
             this.btn_81.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btn_81.Location = new System.Drawing.Point(55, 369);
+            this.btn_81.Location = new System.Drawing.Point(64, 404);
             this.btn_81.Name = "btn_81";
             this.btn_81.Size = new System.Drawing.Size(45, 45);
             this.btn_81.TabIndex = 63;
@@ -1074,7 +1084,7 @@
             this.btn_82.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_82.CausesValidation = false;
             this.btn_82.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btn_82.Location = new System.Drawing.Point(99, 369);
+            this.btn_82.Location = new System.Drawing.Point(108, 404);
             this.btn_82.Name = "btn_82";
             this.btn_82.Size = new System.Drawing.Size(45, 45);
             this.btn_82.TabIndex = 62;
@@ -1087,7 +1097,7 @@
             this.btn_80.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_80.CausesValidation = false;
             this.btn_80.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btn_80.Location = new System.Drawing.Point(11, 369);
+            this.btn_80.Location = new System.Drawing.Point(20, 404);
             this.btn_80.Name = "btn_80";
             this.btn_80.Size = new System.Drawing.Size(45, 45);
             this.btn_80.TabIndex = 61;
@@ -1100,7 +1110,7 @@
             this.btn_71.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_71.CausesValidation = false;
             this.btn_71.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btn_71.Location = new System.Drawing.Point(55, 326);
+            this.btn_71.Location = new System.Drawing.Point(64, 361);
             this.btn_71.Name = "btn_71";
             this.btn_71.Size = new System.Drawing.Size(45, 45);
             this.btn_71.TabIndex = 60;
@@ -1113,7 +1123,7 @@
             this.btn_72.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_72.CausesValidation = false;
             this.btn_72.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btn_72.Location = new System.Drawing.Point(99, 326);
+            this.btn_72.Location = new System.Drawing.Point(108, 361);
             this.btn_72.Name = "btn_72";
             this.btn_72.Size = new System.Drawing.Size(45, 45);
             this.btn_72.TabIndex = 59;
@@ -1126,7 +1136,7 @@
             this.btn_70.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_70.CausesValidation = false;
             this.btn_70.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btn_70.Location = new System.Drawing.Point(11, 326);
+            this.btn_70.Location = new System.Drawing.Point(20, 361);
             this.btn_70.Name = "btn_70";
             this.btn_70.Size = new System.Drawing.Size(45, 45);
             this.btn_70.TabIndex = 58;
@@ -1139,7 +1149,7 @@
             this.btn_61.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_61.CausesValidation = false;
             this.btn_61.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btn_61.Location = new System.Drawing.Point(55, 282);
+            this.btn_61.Location = new System.Drawing.Point(64, 317);
             this.btn_61.Name = "btn_61";
             this.btn_61.Size = new System.Drawing.Size(45, 45);
             this.btn_61.TabIndex = 57;
@@ -1152,7 +1162,7 @@
             this.btn_62.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_62.CausesValidation = false;
             this.btn_62.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btn_62.Location = new System.Drawing.Point(99, 282);
+            this.btn_62.Location = new System.Drawing.Point(108, 317);
             this.btn_62.Name = "btn_62";
             this.btn_62.Size = new System.Drawing.Size(45, 45);
             this.btn_62.TabIndex = 56;
@@ -1165,7 +1175,7 @@
             this.btn_60.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_60.CausesValidation = false;
             this.btn_60.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btn_60.Location = new System.Drawing.Point(11, 282);
+            this.btn_60.Location = new System.Drawing.Point(20, 317);
             this.btn_60.Name = "btn_60";
             this.btn_60.Size = new System.Drawing.Size(45, 45);
             this.btn_60.TabIndex = 55;
@@ -1175,17 +1185,17 @@
             // cbCheatMode
             // 
             this.cbCheatMode.AutoSize = true;
-            this.cbCheatMode.Location = new System.Drawing.Point(11, 424);
+            this.cbCheatMode.Location = new System.Drawing.Point(11, 466);
             this.cbCheatMode.Name = "cbCheatMode";
-            this.cbCheatMode.Size = new System.Drawing.Size(156, 17);
+            this.cbCheatMode.Size = new System.Drawing.Size(107, 17);
             this.cbCheatMode.TabIndex = 84;
-            this.cbCheatMode.Text = "Disable mini board disabling";
+            this.cbCheatMode.Text = "Debugging mode";
             this.cbCheatMode.UseVisualStyleBackColor = true;
             this.cbCheatMode.CheckedChanged += new System.EventHandler(this.cbCheatMode_CheckedChanged);
             // 
             // btnHelp
             // 
-            this.btnHelp.Location = new System.Drawing.Point(271, 420);
+            this.btnHelp.Location = new System.Drawing.Point(277, 462);
             this.btnHelp.Name = "btnHelp";
             this.btnHelp.Size = new System.Drawing.Size(75, 23);
             this.btnHelp.TabIndex = 85;
@@ -1193,11 +1203,129 @@
             this.btnHelp.UseVisualStyleBackColor = true;
             this.btnHelp.Click += new System.EventHandler(this.btnHelp_Click);
             // 
+            // lblCurrPlayer
+            // 
+            this.lblCurrPlayer.AutoSize = true;
+            this.lblCurrPlayer.Location = new System.Drawing.Point(17, 9);
+            this.lblCurrPlayer.Name = "lblCurrPlayer";
+            this.lblCurrPlayer.Size = new System.Drawing.Size(35, 13);
+            this.lblCurrPlayer.TabIndex = 86;
+            this.lblCurrPlayer.Text = "label1";
+            // 
+            // lbl_00
+            // 
+            this.lbl_00.AutoSize = true;
+            this.lbl_00.Font = new System.Drawing.Font("Microsoft Sans Serif", 87F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lbl_00.Location = new System.Drawing.Point(20, 36);
+            this.lbl_00.Name = "lbl_00";
+            this.lbl_00.Size = new System.Drawing.Size(132, 132);
+            this.lbl_00.TabIndex = 87;
+            this.lbl_00.Text = "X";
+            this.lbl_00.Visible = false;
+            // 
+            // lbl_01
+            // 
+            this.lbl_01.AutoSize = true;
+            this.lbl_01.Font = new System.Drawing.Font("Microsoft Sans Serif", 87F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lbl_01.Location = new System.Drawing.Point(166, 36);
+            this.lbl_01.Name = "lbl_01";
+            this.lbl_01.Size = new System.Drawing.Size(132, 132);
+            this.lbl_01.TabIndex = 88;
+            this.lbl_01.Text = "X";
+            this.lbl_01.Visible = false;
+            // 
+            // lbl_02
+            // 
+            this.lbl_02.AutoSize = true;
+            this.lbl_02.Font = new System.Drawing.Font("Microsoft Sans Serif", 87F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lbl_02.Location = new System.Drawing.Point(311, 36);
+            this.lbl_02.Name = "lbl_02";
+            this.lbl_02.Size = new System.Drawing.Size(132, 132);
+            this.lbl_02.TabIndex = 89;
+            this.lbl_02.Text = "X";
+            this.lbl_02.Visible = false;
+            // 
+            // lbl_12
+            // 
+            this.lbl_12.AutoSize = true;
+            this.lbl_12.Font = new System.Drawing.Font("Microsoft Sans Serif", 87F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lbl_12.Location = new System.Drawing.Point(311, 177);
+            this.lbl_12.Name = "lbl_12";
+            this.lbl_12.Size = new System.Drawing.Size(132, 132);
+            this.lbl_12.TabIndex = 92;
+            this.lbl_12.Text = "X";
+            this.lbl_12.Visible = false;
+            // 
+            // lbl_11
+            // 
+            this.lbl_11.AutoSize = true;
+            this.lbl_11.Font = new System.Drawing.Font("Microsoft Sans Serif", 87F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lbl_11.Location = new System.Drawing.Point(166, 177);
+            this.lbl_11.Name = "lbl_11";
+            this.lbl_11.Size = new System.Drawing.Size(132, 132);
+            this.lbl_11.TabIndex = 91;
+            this.lbl_11.Text = "X";
+            this.lbl_11.Visible = false;
+            // 
+            // lbl_10
+            // 
+            this.lbl_10.AutoSize = true;
+            this.lbl_10.Font = new System.Drawing.Font("Microsoft Sans Serif", 87F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lbl_10.Location = new System.Drawing.Point(20, 177);
+            this.lbl_10.Name = "lbl_10";
+            this.lbl_10.Size = new System.Drawing.Size(132, 132);
+            this.lbl_10.TabIndex = 90;
+            this.lbl_10.Text = "X";
+            this.lbl_10.Visible = false;
+            // 
+            // lbl_22
+            // 
+            this.lbl_22.AutoSize = true;
+            this.lbl_22.Font = new System.Drawing.Font("Microsoft Sans Serif", 87F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lbl_22.Location = new System.Drawing.Point(311, 317);
+            this.lbl_22.Name = "lbl_22";
+            this.lbl_22.Size = new System.Drawing.Size(132, 132);
+            this.lbl_22.TabIndex = 95;
+            this.lbl_22.Text = "X";
+            this.lbl_22.Visible = false;
+            // 
+            // lbl_21
+            // 
+            this.lbl_21.AutoSize = true;
+            this.lbl_21.Font = new System.Drawing.Font("Microsoft Sans Serif", 87F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lbl_21.Location = new System.Drawing.Point(166, 317);
+            this.lbl_21.Name = "lbl_21";
+            this.lbl_21.Size = new System.Drawing.Size(132, 132);
+            this.lbl_21.TabIndex = 94;
+            this.lbl_21.Text = "X";
+            this.lbl_21.Visible = false;
+            // 
+            // lbl_20
+            // 
+            this.lbl_20.AutoSize = true;
+            this.lbl_20.Font = new System.Drawing.Font("Microsoft Sans Serif", 87F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lbl_20.Location = new System.Drawing.Point(20, 317);
+            this.lbl_20.Name = "lbl_20";
+            this.lbl_20.Size = new System.Drawing.Size(132, 132);
+            this.lbl_20.TabIndex = 93;
+            this.lbl_20.Text = "X";
+            this.lbl_20.Visible = false;
+            // 
             // XOCeptionForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(433, 451);
+            this.ClientSize = new System.Drawing.Size(445, 500);
+            this.Controls.Add(this.lbl_22);
+            this.Controls.Add(this.lbl_21);
+            this.Controls.Add(this.lbl_20);
+            this.Controls.Add(this.lbl_12);
+            this.Controls.Add(this.lbl_11);
+            this.Controls.Add(this.lbl_10);
+            this.Controls.Add(this.lbl_02);
+            this.Controls.Add(this.lbl_01);
+            this.Controls.Add(this.lbl_00);
+            this.Controls.Add(this.lblCurrPlayer);
             this.Controls.Add(this.btnHelp);
             this.Controls.Add(this.cbCheatMode);
             this.Controls.Add(this.btn_87);
@@ -1284,6 +1412,7 @@
             this.Controls.Add(this.btnExit);
             this.Name = "XOCeptionForm";
             this.Text = "XOCeptionForm";
+            this.Load += new System.EventHandler(this.XOCeptionForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1375,5 +1504,15 @@
         private System.Windows.Forms.Button btn_60;
         private System.Windows.Forms.CheckBox cbCheatMode;
         private System.Windows.Forms.Button btnHelp;
+        private System.Windows.Forms.Label lblCurrPlayer;
+        private System.Windows.Forms.Label lbl_00;
+        private System.Windows.Forms.Label lbl_01;
+        private System.Windows.Forms.Label lbl_02;
+        private System.Windows.Forms.Label lbl_12;
+        private System.Windows.Forms.Label lbl_11;
+        private System.Windows.Forms.Label lbl_10;
+        private System.Windows.Forms.Label lbl_22;
+        private System.Windows.Forms.Label lbl_21;
+        private System.Windows.Forms.Label lbl_20;
     }
 }

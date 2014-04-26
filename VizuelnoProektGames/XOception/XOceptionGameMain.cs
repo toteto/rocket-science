@@ -22,10 +22,43 @@ namespace VizuelnoProektGames.XOception {
         public void playerMove(Button btn) {
             int row = Int32.Parse(btn.Name.ToCharArray()[4].ToString()); //btn_11
             int col = Int32.Parse(btn.Name.ToCharArray()[5].ToString());
-            board.playerMove(row, col);
+            State miniBoardState = board.playerMove(row, col);
+            if (miniBoardState == State.DRAW)
+                resetDrawBoard(row / 3, col / 3);
+            else if (miniBoardState != State.PLAYING)
+                showWinLabel(row / 3, col / 3);
             DisableInactive(row, col);
             currentPlayer = currentPlayer == Seed.X ? Seed.O : Seed.X;
         }
+
+        public void showWinLabel(int row, int col) {
+
+            foreach (var control in form.Controls) {
+                var lbl = control as Label;
+                if (lbl != null && System.Text.RegularExpressions.Regex.IsMatch(lbl.Name, "^lbl_\\d{2}")) {
+                    int currRow = Int32.Parse(lbl.Name.ToCharArray()[4].ToString()); // selected button row
+                    int currCol = Int32.Parse(lbl.Name.ToCharArray()[5].ToString()); // selected button col
+                    if (row == currRow && col == currCol) {
+                        lbl.Text = currentPlayer == Seed.X ? "X" : "O";
+                        lbl.Visible = true;
+                    }
+                }
+            }
+        }
+
+        public void resetDrawBoard(int row, int col) {
+            foreach (var control in form.Controls) {
+                var btn = control as Button;
+                if (btn != null && System.Text.RegularExpressions.Regex.IsMatch(btn.Name, "^btn_\\d{2}")) {
+                    int currRow = Int32.Parse(btn.Name.ToCharArray()[4].ToString()) / 3; // selected button row
+                    int currCol = Int32.Parse(btn.Name.ToCharArray()[5].ToString()) / 3; // selected button col
+                    if(row==currRow && col==currCol)
+                        btn.BackgroundImage = null;
+                }
+            }
+        }
+
+
 
         public void DisableInactive(int row, int col) {
             int rowA, colA; // cell that has been played
