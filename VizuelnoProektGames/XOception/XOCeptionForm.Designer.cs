@@ -1437,7 +1437,7 @@
             this.Controls.Add(this.btn_00);
             this.Controls.Add(this.btnExit);
             this.Name = "XOCeptionForm";
-            this.Text = "XOCeptionForm";
+            this.Text = "X-O-ception";
             this.Load += new System.EventHandler(this.XOCeptionForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
