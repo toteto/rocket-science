@@ -7,8 +7,10 @@ namespace VizuelnoProektGames.XOception {
    public  class MiniBoard {
         public State boardState { get; set; }
         public Seed[][] cells { get; set; }
+        XOceptionGameMain game;
 
-        public MiniBoard() {
+        public MiniBoard(XOceptionGameMain game) {
+            this.game = game;
             boardState = State.PLAYING;
             cells = new Seed[3][];
             for (int i = 0; i < 3; i++) {
@@ -29,7 +31,7 @@ namespace VizuelnoProektGames.XOception {
 
         public bool CheckWin(int currentRow, int currentCol) {
             // state check got from http://www3.ntu.edu.sg/home/ehchua/programming/java/JavaGame_TicTacToe.html#zz-2
-            Seed currentPlayer = XOceptionGameMain.currentPlayer;
+            Seed currentPlayer = game.currentPlayer;
             return (cells[currentRow][0] == currentPlayer         // 3-in-the-row
                    && cells[currentRow][1] == currentPlayer
                    && cells[currentRow][2] == currentPlayer
@@ -47,13 +49,13 @@ namespace VizuelnoProektGames.XOception {
         }
 
         public State playerMove(int row, int col) {
-            cells[row][col] = XOceptionGameMain.currentPlayer;
+            cells[row][col] = game.currentPlayer;
             return updateState(row, col);
         }
 
         private State updateState(int row, int col) {
             if (CheckWin(row, col)) {
-                boardState = XOceptionGameMain.currentPlayer == Seed.X ? State.X_WON : State.O_WON;
+                boardState = game.currentPlayer == Seed.X ? State.X_WON : State.O_WON;
             } else if (CheckDraw()) {
                 boardState = State.DRAW;
             }
@@ -66,14 +68,15 @@ namespace VizuelnoProektGames.XOception {
         public State boardState { get; set; }
 
         public MiniBoard[][] boards { get; set; }
-
-        public MainBoard() {
+        XOceptionGameMain game;
+        public MainBoard(XOceptionGameMain game) {
+            this.game = game;
             boardState = State.PLAYING;
             boards = new MiniBoard[3][];
             for (int i = 0; i < 3; i++) {
                 boards[i] = new MiniBoard[3];
                 for (int j = 0; j < 3; j++) 
-                    boards[i][j] = new MiniBoard();
+                    boards[i][j] = new MiniBoard(this.game);
             }
         }
 
@@ -81,14 +84,14 @@ namespace VizuelnoProektGames.XOception {
             System.Diagnostics.Debug.Write(row + ":" + col);
             State miniBoardState = boards[row / 3][col / 3].playerMove(row % 3, col % 3);
             if (miniBoardState==State.DRAW) {
-                boards[row / 3][col / 3] = new MiniBoard();
+                boards[row / 3][col / 3] = new MiniBoard(game);
             } else
                 updateState(row / 3, col / 3);
             return miniBoardState;
         }
         private void updateState(int row, int col) {
             if (CheckWin(row, col)) {
-                boardState = XOceptionGameMain.currentPlayer == Seed.X ? State.X_WON : State.O_WON;
+                boardState = game.currentPlayer == Seed.X ? State.X_WON : State.O_WON;
             } else if (CheckDraw()) {
                 boardState = State.DRAW;
             }
@@ -105,7 +108,7 @@ namespace VizuelnoProektGames.XOception {
 
         public bool CheckWin(int currentRow, int currentCol) {
             // state check got from http://www3.ntu.edu.sg/home/ehchua/programming/java/JavaGame_TicTacToe.html#zz-2
-            State currentPlayer = XOceptionGameMain.currentPlayer == Seed.X ? State.X_WON : State.O_WON;
+            State currentPlayer = game.currentPlayer == Seed.X ? State.X_WON : State.O_WON;
             return (boards[currentRow][0].boardState == currentPlayer         // 3-in-the-row
                    && boards[currentRow][1].boardState == currentPlayer
                    && boards[currentRow][2].boardState == currentPlayer

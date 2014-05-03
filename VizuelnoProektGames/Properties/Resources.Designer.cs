@@ -123,18 +123,25 @@ namespace VizuelnoProektGames.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Welcome to XOCeption!
         ///Here are some basic rules to get you started.
-        ///
         ///---------------------------------
-        ///
         ///Game mechanics: 
-        ///	- The game contains one main X-O board, but earch cell has been replaced by another standard (mini) X-O board. 
-        ///	- The game starts with all mini boards available to be played. Next mini board to be played is decided by the cell that is played in the previous move.
-        ///		Ex. If player X playes in top-left cell, player O &quot;has&quot; to play in top-left mini board.
-        ///	- If the miniboard is alr [rest of string was truncated]&quot;;.
+        ///  - The game contains one main X-O board, but each cell has been replaced by another standard (mini) X-O board. 
+        ///  - The game starts with all mini boards available to be played. Next mini board to be played is decided by the cell that is played in the previous move.
+        ///       Ex. If player X player in top-left cell, player O &quot;has&quot; to play in top-left mini board.
+        ///  - If the mini board is [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string XOCeption_rules {
+        internal static string XOCeption_rules_en {
             get {
-                return ResourceManager.GetString("XOCeption_rules", resourceCulture);
+                return ResourceManager.GetString("XOCeption_rules_en", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string XOception_rules_mk {
+            get {
+                return ResourceManager.GetString("XOception_rules_mk", resourceCulture);
             }
         }
     }

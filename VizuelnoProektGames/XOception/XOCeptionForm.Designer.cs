@@ -106,7 +106,7 @@
             this.btn_62 = new System.Windows.Forms.Button();
             this.btn_60 = new System.Windows.Forms.Button();
             this.cbCheatMode = new System.Windows.Forms.CheckBox();
-            this.btnHelp = new System.Windows.Forms.Button();
+            this.btnHelpEn = new System.Windows.Forms.Button();
             this.lblCurrPlayer = new System.Windows.Forms.Label();
             this.lbl_00 = new System.Windows.Forms.Label();
             this.lbl_01 = new System.Windows.Forms.Label();
@@ -117,11 +117,13 @@
             this.lbl_22 = new System.Windows.Forms.Label();
             this.lbl_21 = new System.Windows.Forms.Label();
             this.lbl_20 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(358, 462);
+            this.btnExit.Location = new System.Drawing.Point(368, 462);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(75, 23);
             this.btnExit.TabIndex = 0;
@@ -1185,7 +1187,8 @@
             // cbCheatMode
             // 
             this.cbCheatMode.AutoSize = true;
-            this.cbCheatMode.Location = new System.Drawing.Point(11, 466);
+            this.cbCheatMode.Enabled = false;
+            this.cbCheatMode.Location = new System.Drawing.Point(20, 466);
             this.cbCheatMode.Name = "cbCheatMode";
             this.cbCheatMode.Size = new System.Drawing.Size(107, 17);
             this.cbCheatMode.TabIndex = 84;
@@ -1193,43 +1196,45 @@
             this.cbCheatMode.UseVisualStyleBackColor = true;
             this.cbCheatMode.CheckedChanged += new System.EventHandler(this.cbCheatMode_CheckedChanged);
             // 
-            // btnHelp
+            // btnHelpEn
             // 
-            this.btnHelp.Location = new System.Drawing.Point(277, 462);
-            this.btnHelp.Name = "btnHelp";
-            this.btnHelp.Size = new System.Drawing.Size(75, 23);
-            this.btnHelp.TabIndex = 85;
-            this.btnHelp.Text = "Help/Rules";
-            this.btnHelp.UseVisualStyleBackColor = true;
-            this.btnHelp.Click += new System.EventHandler(this.btnHelp_Click);
+            this.btnHelpEn.Location = new System.Drawing.Point(265, 462);
+            this.btnHelpEn.Name = "btnHelpEn";
+            this.btnHelpEn.Size = new System.Drawing.Size(34, 23);
+            this.btnHelpEn.TabIndex = 85;
+            this.btnHelpEn.Text = "EN";
+            this.btnHelpEn.UseVisualStyleBackColor = true;
+            this.btnHelpEn.Click += new System.EventHandler(this.btnHelp_Click);
             // 
             // lblCurrPlayer
             // 
             this.lblCurrPlayer.AutoSize = true;
-            this.lblCurrPlayer.Location = new System.Drawing.Point(17, 9);
+            this.lblCurrPlayer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblCurrPlayer.Location = new System.Drawing.Point(17, 12);
             this.lblCurrPlayer.Name = "lblCurrPlayer";
-            this.lblCurrPlayer.Size = new System.Drawing.Size(35, 13);
+            this.lblCurrPlayer.Size = new System.Drawing.Size(51, 20);
             this.lblCurrPlayer.TabIndex = 86;
             this.lblCurrPlayer.Text = "label1";
             // 
             // lbl_00
             // 
             this.lbl_00.AutoSize = true;
-            this.lbl_00.Font = new System.Drawing.Font("Microsoft Sans Serif", 87F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lbl_00.Location = new System.Drawing.Point(20, 36);
+            this.lbl_00.Font = new System.Drawing.Font("Lucida Console", 98F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lbl_00.Location = new System.Drawing.Point(19, 36);
             this.lbl_00.Name = "lbl_00";
-            this.lbl_00.Size = new System.Drawing.Size(132, 132);
+            this.lbl_00.Size = new System.Drawing.Size(134, 131);
             this.lbl_00.TabIndex = 87;
-            this.lbl_00.Text = "X";
+            this.lbl_00.Text = "O";
             this.lbl_00.Visible = false;
+            this.lbl_00.Click += new System.EventHandler(this.lbl_00_Click);
             // 
             // lbl_01
             // 
             this.lbl_01.AutoSize = true;
-            this.lbl_01.Font = new System.Drawing.Font("Microsoft Sans Serif", 87F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lbl_01.Location = new System.Drawing.Point(166, 36);
+            this.lbl_01.Font = new System.Drawing.Font("Lucida Console", 98F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lbl_01.Location = new System.Drawing.Point(165, 37);
             this.lbl_01.Name = "lbl_01";
-            this.lbl_01.Size = new System.Drawing.Size(132, 132);
+            this.lbl_01.Size = new System.Drawing.Size(134, 131);
             this.lbl_01.TabIndex = 88;
             this.lbl_01.Text = "X";
             this.lbl_01.Visible = false;
@@ -1237,10 +1242,10 @@
             // lbl_02
             // 
             this.lbl_02.AutoSize = true;
-            this.lbl_02.Font = new System.Drawing.Font("Microsoft Sans Serif", 87F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lbl_02.Location = new System.Drawing.Point(311, 36);
+            this.lbl_02.Font = new System.Drawing.Font("Lucida Console", 98F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lbl_02.Location = new System.Drawing.Point(310, 37);
             this.lbl_02.Name = "lbl_02";
-            this.lbl_02.Size = new System.Drawing.Size(132, 132);
+            this.lbl_02.Size = new System.Drawing.Size(134, 131);
             this.lbl_02.TabIndex = 89;
             this.lbl_02.Text = "X";
             this.lbl_02.Visible = false;
@@ -1248,10 +1253,10 @@
             // lbl_12
             // 
             this.lbl_12.AutoSize = true;
-            this.lbl_12.Font = new System.Drawing.Font("Microsoft Sans Serif", 87F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lbl_12.Location = new System.Drawing.Point(311, 177);
+            this.lbl_12.Font = new System.Drawing.Font("Lucida Console", 98F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lbl_12.Location = new System.Drawing.Point(310, 178);
             this.lbl_12.Name = "lbl_12";
-            this.lbl_12.Size = new System.Drawing.Size(132, 132);
+            this.lbl_12.Size = new System.Drawing.Size(134, 131);
             this.lbl_12.TabIndex = 92;
             this.lbl_12.Text = "X";
             this.lbl_12.Visible = false;
@@ -1259,10 +1264,10 @@
             // lbl_11
             // 
             this.lbl_11.AutoSize = true;
-            this.lbl_11.Font = new System.Drawing.Font("Microsoft Sans Serif", 87F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lbl_11.Location = new System.Drawing.Point(166, 177);
+            this.lbl_11.Font = new System.Drawing.Font("Lucida Console", 98F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lbl_11.Location = new System.Drawing.Point(165, 178);
             this.lbl_11.Name = "lbl_11";
-            this.lbl_11.Size = new System.Drawing.Size(132, 132);
+            this.lbl_11.Size = new System.Drawing.Size(134, 131);
             this.lbl_11.TabIndex = 91;
             this.lbl_11.Text = "X";
             this.lbl_11.Visible = false;
@@ -1270,10 +1275,10 @@
             // lbl_10
             // 
             this.lbl_10.AutoSize = true;
-            this.lbl_10.Font = new System.Drawing.Font("Microsoft Sans Serif", 87F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lbl_10.Location = new System.Drawing.Point(20, 177);
+            this.lbl_10.Font = new System.Drawing.Font("Lucida Console", 98F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lbl_10.Location = new System.Drawing.Point(19, 178);
             this.lbl_10.Name = "lbl_10";
-            this.lbl_10.Size = new System.Drawing.Size(132, 132);
+            this.lbl_10.Size = new System.Drawing.Size(134, 131);
             this.lbl_10.TabIndex = 90;
             this.lbl_10.Text = "X";
             this.lbl_10.Visible = false;
@@ -1281,10 +1286,10 @@
             // lbl_22
             // 
             this.lbl_22.AutoSize = true;
-            this.lbl_22.Font = new System.Drawing.Font("Microsoft Sans Serif", 87F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lbl_22.Location = new System.Drawing.Point(311, 317);
+            this.lbl_22.Font = new System.Drawing.Font("Lucida Console", 98F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lbl_22.Location = new System.Drawing.Point(310, 318);
             this.lbl_22.Name = "lbl_22";
-            this.lbl_22.Size = new System.Drawing.Size(132, 132);
+            this.lbl_22.Size = new System.Drawing.Size(134, 131);
             this.lbl_22.TabIndex = 95;
             this.lbl_22.Text = "X";
             this.lbl_22.Visible = false;
@@ -1292,10 +1297,10 @@
             // lbl_21
             // 
             this.lbl_21.AutoSize = true;
-            this.lbl_21.Font = new System.Drawing.Font("Microsoft Sans Serif", 87F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lbl_21.Location = new System.Drawing.Point(166, 317);
+            this.lbl_21.Font = new System.Drawing.Font("Lucida Console", 98F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lbl_21.Location = new System.Drawing.Point(165, 318);
             this.lbl_21.Name = "lbl_21";
-            this.lbl_21.Size = new System.Drawing.Size(132, 132);
+            this.lbl_21.Size = new System.Drawing.Size(134, 131);
             this.lbl_21.TabIndex = 94;
             this.lbl_21.Text = "X";
             this.lbl_21.Visible = false;
@@ -1303,19 +1308,40 @@
             // lbl_20
             // 
             this.lbl_20.AutoSize = true;
-            this.lbl_20.Font = new System.Drawing.Font("Microsoft Sans Serif", 87F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lbl_20.Location = new System.Drawing.Point(20, 317);
+            this.lbl_20.Font = new System.Drawing.Font("Lucida Console", 98F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lbl_20.Location = new System.Drawing.Point(19, 318);
             this.lbl_20.Name = "lbl_20";
-            this.lbl_20.Size = new System.Drawing.Size(132, 132);
+            this.lbl_20.Size = new System.Drawing.Size(134, 131);
             this.lbl_20.TabIndex = 93;
             this.lbl_20.Text = "X";
             this.lbl_20.Visible = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(184, 467);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(82, 13);
+            this.label1.TabIndex = 96;
+            this.label1.Text = "About the game";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(305, 462);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(34, 23);
+            this.button1.TabIndex = 97;
+            this.button1.Text = "MK";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // XOCeptionForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(445, 500);
+            this.ClientSize = new System.Drawing.Size(461, 500);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.lbl_22);
             this.Controls.Add(this.lbl_21);
             this.Controls.Add(this.lbl_20);
@@ -1326,7 +1352,7 @@
             this.Controls.Add(this.lbl_01);
             this.Controls.Add(this.lbl_00);
             this.Controls.Add(this.lblCurrPlayer);
-            this.Controls.Add(this.btnHelp);
+            this.Controls.Add(this.btnHelpEn);
             this.Controls.Add(this.cbCheatMode);
             this.Controls.Add(this.btn_87);
             this.Controls.Add(this.btn_88);
@@ -1503,7 +1529,7 @@
         private System.Windows.Forms.Button btn_62;
         private System.Windows.Forms.Button btn_60;
         private System.Windows.Forms.CheckBox cbCheatMode;
-        private System.Windows.Forms.Button btnHelp;
+        private System.Windows.Forms.Button btnHelpEn;
         private System.Windows.Forms.Label lblCurrPlayer;
         private System.Windows.Forms.Label lbl_00;
         private System.Windows.Forms.Label lbl_01;
@@ -1514,5 +1540,7 @@
         private System.Windows.Forms.Label lbl_22;
         private System.Windows.Forms.Label lbl_21;
         private System.Windows.Forms.Label lbl_20;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button1;
     }
 }

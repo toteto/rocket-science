@@ -8,12 +8,12 @@ namespace VizuelnoProektGames.XOception {
     public class XOceptionGameMain {
         static public MainBoard board { get; set; }
         static public State currentState { get; set; }
-        static public Seed currentPlayer { get; set; }
+        public Seed currentPlayer { get; set; }
         public XOCeptionForm form { get; set; }
         static public bool DebugMode { get; set; }
 
         public XOceptionGameMain(XOCeptionForm form) {
-            board = new MainBoard();
+            board = new MainBoard(this);
             currentPlayer = Seed.X;
             currentState = State.PLAYING;
             this.form = form;
