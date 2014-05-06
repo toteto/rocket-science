@@ -136,7 +136,7 @@ namespace VizuelnoProektGames.Flags
         private void finishGameDialog()
         {
 
-            DialogResult result = MessageBox.Show("Answer " + newGame.points + " / " + newGame.numQuestion, "Question", MessageBoxButtons.YesNo);
+            DialogResult result = MessageBox.Show("Погодивте " + newGame.points + " од " + newGame.numQuestion + " случајно избрани знамиња. Дали сакате да играте повторно ?", "Прашање", MessageBoxButtons.YesNo);
             if (result == DialogResult.Yes)
                 startGame();
             else if (result == DialogResult.No)

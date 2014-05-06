@@ -165,7 +165,7 @@
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Flags";
-            this.Text = "Flags";
+            this.Text = "Знамиња на држави";
             this.Load += new System.EventHandler(this.Flags_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
