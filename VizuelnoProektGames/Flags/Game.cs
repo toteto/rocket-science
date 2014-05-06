@@ -119,7 +119,7 @@ namespace VizuelnoProektGames.Flags
 
         private void getListOfCountry()
         {
-            DirectoryInfo MyRoot = new DirectoryInfo("../../Pictures");
+            DirectoryInfo MyRoot = new DirectoryInfo("Flags_Pictures");
             FileInfo[] fileList = MyRoot.GetFiles();
             foreach (FileInfo file in fileList)
                 countryList.Add(file.Name);

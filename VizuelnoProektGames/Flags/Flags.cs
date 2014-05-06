@@ -86,10 +86,10 @@ namespace VizuelnoProektGames.Flags
 
             textBox1.Text = newGame.countryList.ElementAt(newGame.currentQuestion).Replace(".png", "");
 
-            pictureBox1.Image = Image.FromFile("../../Pictures/" + list.ElementAt(0));
-            pictureBox2.Image = Image.FromFile("../../Pictures/" + list.ElementAt(1));
-            pictureBox3.Image = Image.FromFile("../../Pictures/" + list.ElementAt(2));
-            pictureBox4.Image = Image.FromFile("../../Pictures/" + list.ElementAt(3));
+            pictureBox1.Image = Image.FromFile("Flags_Pictures/" + list.ElementAt(0));
+            pictureBox2.Image = Image.FromFile("Flags_Pictures/" + list.ElementAt(1));
+            pictureBox3.Image = Image.FromFile("Flags_Pictures/" + list.ElementAt(2));
+            pictureBox4.Image = Image.FromFile("Flags_Pictures/" + list.ElementAt(3));
 
             pictureBox5.Image = null;
             pictureBox6.Image = null;
