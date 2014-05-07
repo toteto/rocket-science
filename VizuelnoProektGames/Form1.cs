@@ -38,7 +38,7 @@ namespace VizuelnoProektGames
         }
 
         private void MainForm_Load(object sender, EventArgs e) {
-            textBox1.Text = "Изработиле: \r\nАнтонио Ивановски\r\nПетар Папалевски\r\nТрајче Шоповски";
+            textBox1.Text = "Изработиле: \r\nАнтонио Ивановски\r\nПетар Папалевски\r\nТрајче Шопоски";
         }
 
         private void button2_Click(object sender, EventArgs e)
