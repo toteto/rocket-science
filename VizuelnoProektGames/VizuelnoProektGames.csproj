@@ -59,6 +59,8 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Memory\EasyGame.cs" />
+    <Compile Include="Memory\HardGame.cs" />
     <Compile Include="Memory\MemoryGameForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,6 +73,8 @@
     <Compile Include="Memory\MemoryMainForm.Designer.cs">
       <DependentUpon>MemoryMainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Memory\NewGame.cs" />
+    <Compile Include="Memory\NormalGame.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="XOception\Boards.cs" />

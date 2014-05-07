@@ -17,7 +17,7 @@ namespace VizuelnoProektGames.Memory
         {
             InitializeComponent();
         }
-        
+
         private void btnEasy_Click(object sender, EventArgs e)
         {
             level = "easy";
@@ -48,17 +48,14 @@ namespace VizuelnoProektGames.Memory
             {
                 this.Hide();
                 MemoryGameForm game = new MemoryGameForm(level);
+                game.level = level;
                 game.ShowDialog();
-                this.Close();
             }
             else
             {
                 MessageBox.Show("Please select level.");
             }
         }
-
-
-
 
     }
 }
