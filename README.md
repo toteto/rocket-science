@@ -135,3 +135,38 @@ private List<String> shuffle(List<String> input)
 
 При селектирањето на второто поле и во секој интервал на timer2 се проверува дали е завршена играта со настанот checkForWinner. Доколку е завршена играта се повикува настанот gameOver().
 Кога ќе селектираме поле проверуваме дали тоа е прво или второ од парот, доколку е второ проверуваме дали се исти двете полиња доколку тие се исти се прикажуваат, доколку не се исти се затвораат после неколку секунди.
+
+Подолу се прикажани некој од поважните функции на класата Game.
+```javascript
+
+// метод кој случајно ги генерира полињата
+private void generateIcons()
+        {
+            Random random = new Random();
+            while (icons.Count != ColumnCount * RowCount)
+            {
+                char c = (char)random.Next(48, 122);
+                if (!icons.Contains(Char.ToString(c)))
+                {
+                    icons.Add(Char.ToString(c));
+                    Shuffle(icons);
+                    icons.Add(Char.ToString(c));
+                }
+            }
+        }
+
+// метод кој ги додава полињата во табелата 
+private void addIcons()
+        {
+            for (int i = 0; i < game.ColumnCount; i++)
+            {
+                for (int j = 0; j < game.RowCount; j++)
+                {
+                    Label label = new Label();
+                    inicializeLabel(ref label);
+                    label.Name = "label" + i + j;
+                    tblPanel.Controls.Add(label, j, i);
+                }
+            }
+        }
+```
